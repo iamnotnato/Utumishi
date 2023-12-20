@@ -104,16 +104,7 @@
 <script src="js/core/popper.min.js" type="text/javascript"></script>
 <script src="js/core/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/plugins/perfect-scrollbar.min.js"></script>
-<script src="js/plugins/countup.min.js"></script>
-<script src="js/plugins/choices.min.js"></script>
-<script src="js/plugins/prism.min.js"></script>
-<script src="js/plugins/highlight.min.js"></script>
-
 <script src="js/plugins/rellax.min.js"></script>
-<script src="js/plugins/tilt.min.js"></script>
-<script src="js/plugins/choices.min.js"></script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
 <script src="js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
 
 </body>
