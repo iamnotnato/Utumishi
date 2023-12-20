@@ -49,18 +49,18 @@
         </div>
           
             <div class="card-body">
-              <form role="form" class="text-start">
+              <form role="form" class="text-start" action="" method="post">
                 <div class="input-group input-group-outline my-3">
                   <label class="form-label">Email</label>
-                  <input type="email" class="form-control">
+                  <input type="email" name="email" class="form-control">
                 </div>
                 <div class="input-group input-group-outline mb-3">
                   <label class="form-label">Password</label>
-                  <input type="password" class="form-control">
+                  <input type="password" name="password" class="form-control">
                 </div>
 
                 <div class="text-center">
-                  <button type="submit" class="btn bg-gradient-info w-100 my-4 mb-2">Sign in</button>
+                  <button type="submit" name="submit" class="btn bg-gradient-info w-100 my-4 mb-2">Sign in</button>
                 </div>
 
               </form>
@@ -71,34 +71,34 @@
     </div>
   
 <?php
-      if(isset($_POST["submit"])){
-        if(!empty($_POST['email']) && !empty($_POST['password'])){
-         $user = $_POST['email'];
-         $pass = $_POST['password'];
-         $conn = new mysqli('localhost', 'root', '') or die(mysqli_error());
-         $db = mysqli_select_db($conn, 'utumishi') or die("DB Error");
-         $query = mysqli_query($conn, "SELECT * FROM staff WHERE user='".$user."' and pass='".$pass."'");
-        $numrows = mysqli_num_rows($query);
-          if($numrows !=0){
-           while($row = mysqli_fetch_assoc($query)){
-            $dbusername = $row['email'];
-            $dbpassword = $row['password'];
+  if(isset($_POST["submit"])){
+    if(!empty($_POST['email']) && !empty($_POST['password'])){
+      $email = $_POST['email'];
+      $password = $_POST['password'];
+      $conn = new mysqli('localhost', 'root', '') or die(mysqli_error());
+      $db = mysqli_select_db($conn, 'utumishi') or die("DB Error");
+      $query = mysqli_query($conn, "SELECT * FROM staff WHERE email='".$email."' and password='".$password."'");
+      $numrows = mysqli_num_rows($query);
+        if($numrows !=0){
+          while($row = mysqli_fetch_assoc($query)){
+          $dbusername = $row['email'];
+          $dbpassword = $row['password'];
           }
-            if($user == $dbusername && $pass == $dbpassword){
-              session_start();
-              $_SESSION['sess_user']=$user;
-              header("Location: home.php");
-            }
+        if($email == $dbusername && $password == $dbpassword){
+          session_start();
+          $_SESSION['sess_user']=$email;
+          header("Location: home.php");
           }
-         else{
-          echo "Incorrect Login Details";
+          }
+        else{
+        echo "Incorrect Login Details";
           }
         }
         else
         {
         echo "All fields required";
         }
-    }
+  }
 ?>
 
 
