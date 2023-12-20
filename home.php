@@ -37,6 +37,26 @@
       <span>One of three columns</span>
       Officers oN Duty
       OB
+      <button class="btn btn-icon btn-3 btn-primary" type="button">
+	<span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
+  <span class="btn-inner--text">With icon</span>
+</button>
+
+
+<button class="btn btn-icon btn-3 btn-primary" type="button">
+	<span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
+  <span class="btn-inner--text">With icon</span>
+</button>
+
+<button class="btn btn-icon btn-3 btn-primary" type="button">
+	<span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
+  <span class="btn-inner--text">With icon</span>
+</button>
+
+<button class="btn btn-icon btn-3 btn-primary" type="button">
+	<span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
+  <span class="btn-inner--text">With icon</span>
+</button>
     </div>
     <div class="col-sm">
       <span>One of three columns</span>
@@ -66,6 +86,27 @@
       LOst itemss
       Prisoners 
       Court Dates
+
+      <button class="btn btn-icon btn-3 btn-primary" type="button">
+	<span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
+  <span class="btn-inner--text">With icon</span>
+</button>
+
+
+<button class="btn btn-icon btn-3 btn-primary" type="button">
+	<span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
+  <span class="btn-inner--text">With icon</span>
+</button>
+
+<button class="btn btn-icon btn-3 btn-primary" type="button">
+	<span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
+  <span class="btn-inner--text">With icon</span>
+</button>
+
+<button class="btn btn-icon btn-3 btn-primary" type="button">
+	<span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
+  <span class="btn-inner--text">With icon</span>
+</button>
     </div>
   </div>
 </div>
