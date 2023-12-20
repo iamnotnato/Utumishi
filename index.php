@@ -18,7 +18,7 @@
 <link rel="apple-touch-icon" sizes="76x76" href="img/logo.png">
 <link rel="icon" type="image/png" href="img/logo.png">
 
-<title> Utumishi </title>
+<title> Utumishi | LOGIN </title>
 
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
 <link href="css/nucleo-icons.css" rel="stylesheet" />
@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="text-center">
-                  <button type="button" class="btn bg-gradient-info w-100 my-4 mb-2">Sign in</button>
+                  <button type="submit" class="btn bg-gradient-info w-100 my-4 mb-2">Sign in</button>
                 </div>
 
               </form>
@@ -69,7 +69,37 @@
         </div>
       </div>
     </div>
-    
+  
+<?php
+      if(isset($_POST["submit"])){
+        if(!empty($_POST['email']) && !empty($_POST['password'])){
+         $user = $_POST['email'];
+         $pass = $_POST['password'];
+         $conn = new mysqli('localhost', 'root', '') or die(mysqli_error());
+         $db = mysqli_select_db($conn, 'utumishi') or die("DB Error");
+         $query = mysqli_query($conn, "SELECT * FROM staff WHERE user='".$user."' and pass='".$pass."'");
+        $numrows = mysqli_num_rows($query);
+          if($numrows !=0){
+           while($row = mysqli_fetch_assoc($query)){
+            $dbusername = $row['email'];
+            $dbpassword = $row['password'];
+          }
+            if($user == $dbusername && $pass == $dbpassword){
+              session_start();
+              $_SESSION['sess_user']=$user;
+              header("Location: home.php");
+            }
+          }
+         else{
+          echo "Incorrect Login Details";
+          }
+        }
+        else
+        {
+        echo "All fields required";
+        }
+    }
+?>
 
 <script src="js/core/popper.min.js" type="text/javascript"></script>
 <script src="js/core/bootstrap.min.js" type="text/javascript"></script>
