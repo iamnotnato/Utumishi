@@ -10,6 +10,17 @@
  =========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<?php
+session_start();
+$connect = mysqli_connect("localhost", "root", "", "utumishi");
+if(!isset($_SESSION['sess_user'])){
+  header("Location:index.php");
+}
+else
+{
+?>
+
+
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
 <head>
@@ -45,7 +56,7 @@
      
         <li class="nav-item px-3">
           <a class="nav-link text-muted">
-          <span class="d-sm-inline d-none"><h4>Signed In As</h4></span>
+          <span class="d-sm-inline d-none"><h4>Signed In As <?=$_SESSION['sess_user'];?></h4></span>
           </a>
         </li>
       </ul>
@@ -54,7 +65,7 @@
             <li class="nav-item d-flex align-items-center">
               <a href="javascript:;" class="nav-link text-muted font-weight-bold px-0">
                 
-                <span class="d-sm-inline d-none"><h4><i class="fa fa-user fa-2xl text-muted"></i> Sign Out</h4></span>
+                <span class="d-sm-inline d-none"><h4><a href="logout.php"><i class="fa fa-user fa-2xl text-muted"></i> Sign Out</a></h4></span>
               </a>
             </li>
 
@@ -120,3 +131,6 @@
 
 </body>
 </html>
+<?php
+}
+?>
