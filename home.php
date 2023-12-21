@@ -140,7 +140,7 @@
 <div class="col-md-6">
 <div class="info">
 <i class="material-icons text-gradient text-primary text-3xl">content_copy</i>
-<h5 class="font-weight-bolder mt-3">New Case</h5>
+<h5 class="font-weight-bolder mt-3">New</h5>
 <p class="pe-5">Built by developers for developers. Check the foundation and you will find everything inside our documentation.</p>
 </div>
 </div>
