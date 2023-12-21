@@ -15,17 +15,17 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="apple-touch-icon" sizes="76x76" href="img/logo.png">
-<link rel="icon" type="image/png" href="img/logo.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/logo.png">
+<link rel="icon" type="image/png" href="../img/logo.png">
 
 <title> Utumishi | LOGIN </title>
 
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
-<link href="css/nucleo-icons.css" rel="stylesheet" />
-<link href="css/nucleo-svg.css" rel="stylesheet" />
+<link href="../css/nucleo-icons.css" rel="stylesheet" />
+<link href="../css/nucleo-svg.css" rel="stylesheet" />
 <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-<link id="pagestyle" href="css/material-kit.css?v=3.0.4" rel="stylesheet" />
+<link id="pagestyle" href="../css/material-kit.css?v=3.0.4" rel="stylesheet" />
 
 </head>
 
@@ -111,11 +111,11 @@
   </div>
 </div>
 
-<script src="js/core/popper.min.js" type="text/javascript"></script>
-<script src="js/core/bootstrap.min.js" type="text/javascript"></script>
-<script src="js/plugins/perfect-scrollbar.min.js"></script>
-<script src="js/plugins/rellax.min.js"></script>
-<script src="js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+<script src="../js/core/popper.min.js" type="text/javascript"></script>
+<script src="../js/core/bootstrap.min.js" type="text/javascript"></script>
+<script src="../js/plugins/perfect-scrollbar.min.js"></script>
+<script src="../js/plugins/rellax.min.js"></script>
+<script src="../js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
 
 </body>
 </html>
