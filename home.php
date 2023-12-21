@@ -114,10 +114,10 @@ else
 
     
   <div class="col-sm">
-  <button class="btn btn-icon btn-3 btn-primary" type="button">
+  <a href="newcases.php"> <button class="btn btn-icon btn-3 btn-primary" type="button">
 	<span class="btn-inner--icon"><i class="fa fa-exclamation me-sm-1"></i></span>
-  <span class="btn-inner--text">Report Case</span>
-  </button>
+  <span class="btn-inner--text"> Report Case</span>
+  </button> </a>
   </div>
   </div>
 </div>
