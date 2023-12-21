@@ -48,16 +48,16 @@
                   <p class="mb-0">Enter your email and password to sign in</p>
                 </div>
                 <div class="card-body">
-                  <form role="form">
+                  <form role="form" action="" method="post">
                     <div class="mb-3">
-                      <input type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email">
+                      <input type="email" name="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email">
                     </div>
                     <div class="mb-3">
-                      <input type="email" class="form-control form-control-lg" placeholder="Password" aria-label="Password">
+                      <input type="password" name="password" class="form-control form-control-lg" placeholder="Password" aria-label="Password">
                     </div>
 
                     <div class="text-center">
-                      <button type="button" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Sign in</button>
+                      <button type="submit" name="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Sign in</button>
                     </div>
                   </form>
                 </div>
@@ -76,6 +76,37 @@
       </div>
     </section>
   </main>
+
+  <?php
+  if(isset($_POST["submit"])){
+    if(!empty($_POST['email']) && !empty($_POST['password'])){
+      $email = $_POST['email'];
+      $password = $_POST['password'];
+      $conn = new mysqli('localhost', 'root', '') or die(mysqli_error());
+      $db = mysqli_select_db($conn, 'utumishi') or die("DB Error");
+      $query = mysqli_query($conn, "SELECT * FROM staff WHERE email='".$email."' and password='".$password."'");
+      $numrows = mysqli_num_rows($query);
+        if($numrows !=0){
+          while($row = mysqli_fetch_assoc($query)){
+          $dbusername = $row['email'];
+          $dbpassword = $row['password'];
+          }
+        if($email == $dbusername && $password == $dbpassword){
+          session_start();
+          $_SESSION['sess_user']=$email;
+          header("Location: home.php");
+          }
+          }
+        else{
+         echo "<span class='alert alert-danger text-center mt-10'>Incorrect Login Details</span>";
+        }
+        }
+        else
+        {
+          echo "<span class='alert alert-danger text-center mt-10'>All fields required</span>";
+        }
+  }
+?>
   <!--   Core JS Files   -->
   <script src="js/core/popper.min.js"></script>
   <script src="js/core/bootstrap.min.js"></script>
