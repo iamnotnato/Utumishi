@@ -91,12 +91,12 @@
           }
           }
         else{
-        echo "Incorrect Login Details";
-          }
+         echo "<span class='alert alert-danger text-center mt-10'>Incorrect Login Details</span>";
+        }
         }
         else
         {
-        echo "All fields required";
+          echo "<span class='alert alert-danger text-center mt-10'>All fields required</span>";
         }
   }
 ?>
