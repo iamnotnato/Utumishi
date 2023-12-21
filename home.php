@@ -31,36 +31,49 @@
 
 <body class="index-page bg-gray-200">
   
+<nav
+  class="navbar navbar-expand-lg top-0 z-index-3 w-100 shadow-none my-3  navbar-transparent ">
+  <div class="container">
+    <a class="navbar-brand  text-Gray 900 " href="" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
+      <h4>Utumishi</h4>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navigation">
+      <ul class="navbar-nav navbar-nav-hover mx-auto">
+     
+        <li class="nav-item px-3">
+          <a class="nav-link text-muted">
+          <span class="d-sm-inline d-none"><h4>Signed In As</h4></span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav  justify-content-end">
+            <li class="nav-item d-flex align-items-center">
+              <a href="javascript:;" class="nav-link text-muted font-weight-bold px-0">
+                
+                <span class="d-sm-inline d-none"><h4><i class="fa fa-user fa-2xl text-muted"></i> Sign Out</h4></span>
+              </a>
+            </li>
+
+          </ul>
+
+    
+    </div>
+  </div>
+</nav>
+<!-- End Navbar -->
+
+
+</div>
+
+<br>
 <div class="container">
   <div class="row">
     <div class="col-sm">
-      <span>One of three columns</span>
-      Officers oN Duty
-      OB
-      <button class="btn btn-icon btn-3 btn-primary" type="button">
-	<span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
-  <span class="btn-inner--text">With icon</span>
-</button>
-
-
-<button class="btn btn-icon btn-3 btn-primary" type="button">
-	<span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
-  <span class="btn-inner--text">With icon</span>
-</button>
-
-<button class="btn btn-icon btn-3 btn-primary" type="button">
-	<span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
-  <span class="btn-inner--text">With icon</span>
-</button>
-
-<button class="btn btn-icon btn-3 btn-primary" type="button">
-	<span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
-  <span class="btn-inner--text">With icon</span>
-</button>
-    </div>
-    <div class="col-sm">
-      <span>One of three columns</span>
-      <h1>Current date and time:</h1>
+    <span><h4>Current date and time : </h4></span>
     <span id="datetime"></span>
 
     <script>
@@ -80,96 +93,24 @@
       setInterval(updateDateTime, 1000);
     </script>
     </div>
+
     <div class="col-sm">
-      <span>One of three columns</span>
-      LOst Vehicels
-      LOst itemss
-      Prisoners 
-      Court Dates
-
-      <button class="btn btn-icon btn-3 btn-primary" type="button">
-	<span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
-  <span class="btn-inner--text">With icon</span>
-</button>
-
-
-<button class="btn btn-icon btn-3 btn-primary" type="button">
-	<span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
-  <span class="btn-inner--text">With icon</span>
-</button>
-
-<button class="btn btn-icon btn-3 btn-primary" type="button">
-	<span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
-  <span class="btn-inner--text">With icon</span>
-</button>
-
-<button class="btn btn-icon btn-3 btn-primary" type="button">
-	<span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
-  <span class="btn-inner--text">With icon</span>
-</button>
+    <center><img src="img/logo.png" height="100px" width="100px"></center>
+      
+              <h4 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Utumishi</h4>
+        <h5 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Here To Serve</h5>
     </div>
+
+    
+  <div class="col-sm">
+  <button class="btn btn-icon btn-3 btn-primary" type="button">
+	<span class="btn-inner--icon"><i class="fa fa-exclamation me-sm-1"></i></span>
+  <span class="btn-inner--text">Report Case</span>
+  </button>
+  </div>
   </div>
 </div>
 
-
-<section class="my-5 py-5">
-<div class="container">
-<div class="row align-items-center">
-<div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
-<div class="rotating-card-container">
-<div class="card card-rotate card-background card-background-mask-primary shadow-primary mt-md-0 mt-5">
-<div class="front front-background" style="background-image: url(https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=987&amp;q=80); background-size: cover;">
-<div class="card-body py-7 text-center">
-<i class="material-icons text-white text-4xl my-3">touch_app</i>
-<h3 class="text-white">Feel the <br> Material Kit</h3>
-<p class="text-white opacity-8">All the Bootstrap components that you need in a development have been re-design with the new look.</p>
-</div>
-</div>
-<div class="back back-background" style="background-image: url(https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1365&amp;q=80); background-size: cover;">
-<div class="card-body pt-7 text-center">
-<h3 class="text-white">Discover More</h3>
-<p class="text-white opacity-8"> You will save a lot of time going from prototyping to full-functional code because all elements are implemented.</p>
-<a href=".//sections/page-sections/hero-sections.html" target="_blank" class="btn btn-white btn-sm w-50 mx-auto mt-3">Start with Headers</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-6 ms-auto">
-<div class="row justify-content-start">
-<div class="col-md-6">
-<div class="info">
-<i class="material-icons text-gradient text-primary text-3xl">content_copy</i>
-<h5 class="font-weight-bolder mt-3">New</h5>
-<p class="pe-5">Built by developers for developers. Check the foundation and you will find everything inside our documentation.</p>
-</div>
-</div>
-<div class="col-md-6">
-<div class="info">
-<i class="material-icons text-gradient text-primary text-3xl">flip_to_front</i>
-<h5 class="font-weight-bolder mt-3">Bootstrap 5 Ready</h5>
-<p class="pe-3">The world’s most popular front-end open source toolkit, featuring Sass variables and mixins.</p>
-</div>
-</div>
-</div>
-<div class="row justify-content-start mt-5">
-<div class="col-md-6 mt-3">
-<i class="material-icons text-gradient text-primary text-3xl">price_change</i>
-<h5 class="font-weight-bolder mt-3">Save Time &amp; Money</h5>
-<p class="pe-5">Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System.</p>
-</div>
-<div class="col-md-6 mt-3">
-<div class="info">
-<i class="material-icons text-gradient text-primary text-3xl">devices</i>
-<h5 class="font-weight-bolder mt-3">Fully Responsive</h5>
-<p class="pe-3">Regardless of the screen size, the website content will naturally fit the given resolution.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
 
 <script src="js/core/popper.min.js" type="text/javascript"></script>
 <script src="js/core/bootstrap.min.js" type="text/javascript"></script>
