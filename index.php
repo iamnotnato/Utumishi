@@ -29,46 +29,50 @@
 
 </head>
 
-<body class="index-page bg-gray-200">
-  
- <div class="page-header align-items-start min-vh-100" style="background-image: url('img/facebook_cover_photo_2.png');" loading="lazy">
-    <span class="mask bg-gradient-dark opacity-6"></span>
-    <div class="container my-auto">
-      <div class="row">
-        <div class="col-lg-4 col-md-8 col-12 mx-auto">
-          <div class="card z-index-0 fadeIn3 fadeInBottom">
-
-        <div class="col-lg-6 mt-lg-0 mt-5 ps-lg-0 ps-0">
-          <div class="p-3 info-horizontal">
-          <center><img src="img/logo.png" height="100px" width="100px"></center>
-          </div>
-        <div class="description ps-3">
-        <h4 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Utumishi</h4>
+<body class="">
+  <main class="main-content  mt-0">
+    <section>
+      <div class="page-header min-vh-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
+            <center><img src="img/logo.png" height="100px" width="100px"></center>
+              <div class="card card-plain">
+              <h4 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Utumishi</h4>
         <h5 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Here To Serve</h5>
-          </div>
-        </div>
-          
-            <div class="card-body">
-              <form role="form" class="text-start" action="" method="post">
-                <div class="input-group input-group-outline my-3">
-                  <label class="form-label">Email</label>
-                  <input type="email" name="email" class="form-control">
+                <div class="card-header pb-0 text-start">
+                  <h4 class="font-weight-bolder">Sign In</h4>
+                  <p class="mb-0">Enter your email and password to sign in</p>
                 </div>
-                <div class="input-group input-group-outline mb-3">
-                  <label class="form-label">Password</label>
-                  <input type="password" name="password" class="form-control">
+                <div class="card-body">
+                  <form role="form" action="" method="post">
+                    <div class="input-group input-group-outline my-3">
+                      <input type="email" name="email" class="form-control form-control-lg  input-group-outline" placeholder="Email" aria-label="Email">
+                    </div>
+                    <div class="input-group input-group-outline my-3">
+                      <input type="password" name="password" class="form-control form-control-lg  input-group-outline" placeholder="Password" aria-label="Password">
+                    </div>
+
+                    <div class="text-center">
+                      <button type="submit" name="submit" class="btn btn-lg btn-info btn-lg w-100 mt-4 mb-0">Sign in</button>
+                    </div>
+                  </form>
                 </div>
 
-                <div class="text-center">
-                  <button type="submit" name="submit" class="btn bg-gradient-info w-100 my-4 mb-2">Sign in</button>
-                </div>
-
-              </form>
+              </div>
+            </div>
+            <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
+              <div class="position-relative bg-gradient-info h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden" style="background-image: url('img/facebook_cover_photo_2.png');
+          background-size: cover;  background-repeat: no-repeat;">
+                <span class="mask bg-gradient-info opacity-6"></span>
+                <h4 class="mt-5 text-white font-weight-bolder position-relative">"Here to Serve"</h4>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+  </main>
   
 <?php
   if(isset($_POST["submit"])){

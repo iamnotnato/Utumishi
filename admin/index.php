@@ -42,7 +42,10 @@
         <div class="container">
           <div class="row">
             <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
+            <center><img src="../img/logo.png" height="100px" width="100px"></center>
               <div class="card card-plain">
+              <h4 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Utumishi</h4>
+        <h5 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Here To Serve</h5>
                 <div class="card-header pb-0 text-start">
                   <h4 class="font-weight-bolder">Sign In</h4>
                   <p class="mb-0">Enter your email and password to sign in</p>
