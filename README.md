@@ -1,6 +1,8 @@
 <div align="center">
 
 **utumishi** - A reliable police station system.
+
+![Contributors](https://img.shields.io/github/contributors/iamnotnato/utumishi?style=flat-square)
 </div>
 
 ## Installation
