@@ -5,7 +5,10 @@
 
 ## Installation
 
--utumishi can be installed by cloning the repo `git clone https://github.com/iamnotnato/utumishi.git`.
+- utumishi can be installed by cloning the repo
+<br>
+
+ `git clone https://github.com/iamnotnato/utumishi.git`.
 
 Material Kit 2
 https://www.creative-tim.com/product/material-kit
