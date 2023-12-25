@@ -1,6 +1,9 @@
 <div align="center">
 
 **utumishi** - A reliable police station system.
+'
+
+[![MIT License](https://img.shields.io/github/license/spotdl/spotify-downloader?color=44CC11&style=flat-square)](https://github.com/iamnotnato/utumishi/blob/master/LICENSE)
 
 ![Contributors](https://img.shields.io/github/contributors/iamnotnato/utumishi?style=flat-square)
 </div>
