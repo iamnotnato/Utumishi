@@ -17,16 +17,16 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="apple-touch-icon" sizes="76x76" href="app/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="app/images/logo.ico">
+<link rel="icon" type="image/png" href="app/images/icon.png">
 
 <title> Utumishi | LOGIN </title>
 
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
-<link href="css/nucleo-icons.css" rel="stylesheet" />
-<link href="css/nucleo-svg.css" rel="stylesheet" />
+<link href="app/css/nucleo-icons.css" rel="stylesheet" />
+<link href="app/css/nucleo-svg.css" rel="stylesheet" />
 <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-<link id="pagestyle" href="css/material-kit.css?v=3.0.4" rel="stylesheet" />
+<link id="pagestyle" href="app/css/material-kit.css?v=3.0.4" rel="stylesheet" />
 
 </head>
 
@@ -37,7 +37,7 @@
         <div class="container">
           <div class="row">
             <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
-            <center><img src="img/logo.png" height="100px" width="100px"></center>
+            <center><img src="app/images/logo.png" height="400px" width="400px"></center>
               <div class="card card-plain">
               <h4 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Utumishi</h4>
         <h5 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Here To Serve</h5>
@@ -63,7 +63,7 @@
               </div>
             </div>
             <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
-              <div class="position-relative bg-gradient-info h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden" style="background-image: url('img/facebook_cover_photo_2.png');
+              <div class="position-relative bg-gradient-info h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden" style="background-image: url('app/images/logo.png');
           background-size: cover;  background-repeat: no-repeat;">
                 <span class="mask bg-gradient-info opacity-6"></span>
                 <h4 class="mt-5 text-white font-weight-bolder position-relative">"Here to Serve"</h4>
@@ -106,11 +106,11 @@
   }
 ?>
 
-<script src="js/core/popper.min.js" type="text/javascript"></script>
-<script src="js/core/bootstrap.min.js" type="text/javascript"></script>
-<script src="js/plugins/perfect-scrollbar.min.js"></script>
-<script src="js/plugins/rellax.min.js"></script>
-<script src="js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+<script src="app/js/core/popper.min.js" type="text/javascript"></script>
+<script src="app/js/core/bootstrap.min.js" type="text/javascript"></script>
+<script src="app/js/plugins/perfect-scrollbar.min.js"></script>
+<script src="app/js/plugins/rellax.min.js"></script>
+<script src="app/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
 
 </body>
 
