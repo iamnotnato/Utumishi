@@ -1,8 +1,8 @@
 <div align="center">
 
- <img src="https://github.com/iamnotnato/utumishi/blob/features/app/images/logo.png" alt="Logo" width="400" height="400">
+ <img src="https://github.com/iamnotnato/utumishi/blob/main/app/images/logo.png" alt="Logo" width="400" height="400">
 
-**utumishi** - A reliable police station system.
+**utumishi - Empowering law enforcement with reliable technology.**
 
 
 
