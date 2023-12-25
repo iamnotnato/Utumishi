@@ -10,13 +10,14 @@
  =========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="apple-touch-icon" sizes="76x76" href="img/logo.png">
-<link rel="icon" type="image/png" href="img/logo.png">
+<link rel="apple-touch-icon" sizes="76x76" href="app/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="app/images/logo.ico">
 
 <title> Utumishi | LOGIN </title>
 
