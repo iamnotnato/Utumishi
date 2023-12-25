@@ -76,33 +76,30 @@
   </main>
   
 <?php
-  if(isset($_POST["submit"])){
-    if(!empty($_POST['email']) && !empty($_POST['password'])){
-      $email = $_POST['email'];
-      $password = $_POST['password'];
-      $conn = new mysqli('localhost', 'root', '') or die(mysqli_error());
-      $db = mysqli_select_db($conn, 'utumishi') or die("DB Error");
-      $query = mysqli_query($conn, "SELECT * FROM staff WHERE email='".$email."' and password='".$password."'");
-      $numrows = mysqli_num_rows($query);
-        if($numrows !=0){
-          while($row = mysqli_fetch_assoc($query)){
-          $dbusername = $row['email'];
-          $dbpassword = $row['password'];
+  if(isset($_POST["submit"])) {
+      if(!empty($_POST['email']) && !empty($_POST['password'])) {
+          $email = $_POST['email'];
+          $password = $_POST['password'];
+          $conn = new mysqli('localhost', 'root', '') or die(mysqli_error());
+          $db = mysqli_select_db($conn, 'utumishi') or die("DB Error");
+          $query = mysqli_query($conn, "SELECT * FROM staff WHERE email='".$email."' and password='".$password."'");
+          $numrows = mysqli_num_rows($query);
+          if($numrows != 0) {
+              while($row = mysqli_fetch_assoc($query)) {
+                  $dbusername = $row['email'];
+                  $dbpassword = $row['password'];
+              }
+              if($email == $dbusername && $password == $dbpassword) {
+                  session_start();
+                  $_SESSION['sess_user'] = $email;
+                  header("Location: home.php");
+              }
+          } else {
+              echo "<span class='alert alert-danger text-center mt-10'>Incorrect Login Details</span>";
           }
-        if($email == $dbusername && $password == $dbpassword){
-          session_start();
-          $_SESSION['sess_user']=$email;
-          header("Location: home.php");
-          }
-          }
-        else{
-         echo "<span class='alert alert-danger text-center mt-10'>Incorrect Login Details</span>";
-        }
-        }
-        else
-        {
+      } else {
           echo "<span class='alert alert-danger text-center mt-10'>All fields required</span>";
-        }
+      }
   }
 ?>
 
