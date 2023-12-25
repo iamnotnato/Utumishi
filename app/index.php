@@ -3,7 +3,7 @@
 * Material Kit 2 - v3.0.4
 =========================================================
 
-* Product Page:  https://www.creative-tim.com/product/material-kit 
+* Product Page:  https://www.creative-tim.com/product/material-kit
 * Copyright 2023 Creative Tim (https://www.creative-tim.com)
 * Coded by www.creative-tim.com
 
@@ -43,7 +43,7 @@
         <h5 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Here To Serve</h5>
 
 
-       
+
                 <div class="card-header pb-0 text-start">
                   <h4 class="font-weight-bolder">Sign In</h4>
                   <p class="mb-0">Enter your email and password to sign in.</p>
@@ -91,7 +91,7 @@
                     </div>
                   </form>
                 </div>
-                
+
               </div>
             </div>
             <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
@@ -105,7 +105,7 @@
       </div>
     </section>
   </main>
-  
+
 
 
 <script src="js/core/popper.min.js" type="text/javascript"></script>
