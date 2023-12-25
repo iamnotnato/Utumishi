@@ -3,7 +3,7 @@
 * Material Kit 2 - v3.0.4
 =========================================================
 
-* Product Page:  https://www.creative-tim.com/product/material-kit 
+* Product Page:  https://www.creative-tim.com/product/material-kit
 * Copyright 2023 Creative Tim (https://www.creative-tim.com)
 * Coded by www.creative-tim.com
 
@@ -74,7 +74,7 @@
       </div>
     </section>
   </main>
-  
+
 <?php
   if(isset($_POST["submit"])) {
       if(!empty($_POST['email']) && !empty($_POST['password'])) {
