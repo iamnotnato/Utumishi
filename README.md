@@ -21,6 +21,14 @@
 - start WAMP or XAMPP
 - Ensure Apache, MySQL are running
 - open phpmyadmin
+
+- Insatll the database
+
+- Navigate to localhost/utumishi using any browser of your choice.
+
+- To access the backend use localhost/utumishi/admin
+
+
 ## Contributing
 
 Interested in contributing? Check out our [CONTRIBUTING.md](docs/CONTRIBUTING.md) to find
