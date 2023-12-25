@@ -62,3 +62,13 @@ https://www.creative-tim.com/product/material-kit
 
 Argon Dashboard 2
 https://www.creative-tim.com/product/argon-dashboard
+
+
+https://favicon.io/
+
+logo 
+
+Image Creator
+from Designer 
+
+DALL·E 3
