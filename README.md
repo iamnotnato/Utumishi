@@ -1,5 +1,7 @@
 <div align="center">
 
+ <img src="https://github.com/iamnotnato/utumishi/blob/master/img/logo.png" alt="Logo" width="400" height="400">
+
 **utumishi** - A reliable police station system.
 
 
@@ -72,3 +74,5 @@ Image Creator
 from Designer 
 
 DALL·E 3
+
+https://www.remove.bg/
