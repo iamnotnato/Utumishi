@@ -10,7 +10,17 @@
 
  `git clone https://github.com/iamnotnato/utumishi.git`
 
+- you will need a local server. 
+- Free Alternatives include XAMPP and WAMP - They assist developers to test a websites for bugs and errors before going live
 
+- I will be using WAMP stands for Windows, Apache, MySQL, and PHP as XAMPP always has a bug after several uses.
+
+
+- install WAMP or XAMPP
+- Clone the repo in the www folder or htdocs folder for XAMPP
+- start WAMP or XAMPP
+- Ensure Apache, MySQL are running
+- open phpmyadmin
 ## Contributing
 
 Interested in contributing? Check out our [CONTRIBUTING.md](docs/CONTRIBUTING.md) to find
