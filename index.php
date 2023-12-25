@@ -17,7 +17,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="apple-touch-icon" sizes="76x76" href="app/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="app/images/icon.png">
+<link rel="icon" type="image/png" href="app/images/logo.png">
 
 <title> Utumishi | LOGIN </title>
 
@@ -37,45 +37,20 @@
         <div class="container">
           <div class="row">
             <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
-            <center><img src="app/images/logo.png" height="400px" width="400px"></center>
+            <center><img src="app/images/logo.png" height="300px" width="300px"></center>
               <div class="card card-plain">
-              <h4 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Utumishi</h4>
+              <h4 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">utumishi</h4>
         <h5 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Here To Serve</h5>
+
+
+       
                 <div class="card-header pb-0 text-start">
                   <h4 class="font-weight-bolder">Sign In</h4>
-                  <p class="mb-0">Enter your email and password to sign in</p>
+                  <p class="mb-0">Enter your email and password to sign in.</p>
                 </div>
                 <div class="card-body">
-                  <form role="form" action="" method="post">
-                    <div class="input-group input-group-outline my-3">
-                      <input type="email" name="email" class="form-control form-control-lg  input-group-outline" placeholder="Email" aria-label="Email">
-                    </div>
-                    <div class="input-group input-group-outline my-3">
-                      <input type="password" name="password" class="form-control form-control-lg  input-group-outline" placeholder="Password" aria-label="Password">
-                    </div>
 
-                    <div class="text-center">
-                      <button type="submit" name="submit" class="btn btn-lg btn-info btn-lg w-100 mt-4 mb-0">Sign in</button>
-                    </div>
-                  </form>
-                </div>
-
-              </div>
-            </div>
-            <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
-              <div class="position-relative bg-gradient-info h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden" style="background-image: url('app/images/logo.png');
-          background-size: cover;  background-repeat: no-repeat;">
-                <span class="mask bg-gradient-info opacity-6"></span>
-                <h4 class="mt-5 text-white font-weight-bolder position-relative">"Here to Serve"</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  
-<?php
+                <?php
   if(isset($_POST["submit"])){
     if(!empty($_POST['email']) && !empty($_POST['password'])){
       $email = $_POST['email'];
@@ -96,15 +71,45 @@
           }
           }
         else{
-         echo "<span class='alert alert-danger text-center mt-10'>Incorrect Login Details</span>";
+         echo "<span class='btn btn-danger text-center'>Incorrect Login Details</span>";
         }
         }
         else
         {
-          echo "<span class='alert alert-danger text-center mt-10'>All fields required</span>";
+          echo "<span class='btn btn-danger text-center'>All fields required</span>";
         }
   }
 ?>
+
+                  <form role="form" action="" method="post">
+                    <div class="input-group input-group-outline my-3">
+                      <input type="email" name="email" class="form-control form-control-lg  input-group-outline" placeholder="Email" aria-label="Email">
+                    </div>
+                    <div class="input-group input-group-outline my-3">
+                      <input type="password" name="password" class="form-control form-control-lg  input-group-outline" placeholder="Password" aria-label="Password">
+                    </div>
+
+                    <div class="text-center">
+                      <button type="submit" name="submit" class="btn btn-lg btn-info btn-lg w-100 mt-4 mb-0">Sign in</button>
+                    </div>
+                  </form>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
+              <div class="position-relative bg-gradient-info h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden" style="background-image: url('app/images/logo.png');
+          background-size: cover;  background-repeat: no-repeat;">
+                <span class="mask bg-gradient-info opacity-6"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+
 
 <script src="app/js/core/popper.min.js" type="text/javascript"></script>
 <script src="app/js/core/bootstrap.min.js" type="text/javascript"></script>
