@@ -42,94 +42,39 @@ else
 
 <body class="index-page bg-gray-200">
   
-<nav
-  class="navbar navbar-expand-lg top-0 z-index-3 w-100 shadow-none my-3  navbar-transparent ">
-  <div class="container">
-    <a class="navbar-brand  text-Gray 900 " href="" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
-      <h4>Utumishi</h4>
+  
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg top-0 z-index-3 w-100 shadow-none my-3  navbar-transparent ">
+  <div class="container-fluid px-0">
+    <a class="navbar-brand font-weight-bolder ms-sm-3" href="https://demos.creative-tim.com/material-kit/index" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
+      Material Kit 2
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navigation">
-      <ul class="navbar-nav navbar-nav-hover mx-auto">
-     
-        <li class="nav-item px-3">
-          <a class="nav-link text-muted">
-          <span class="d-sm-inline d-none"><h4>Signed In As <?=$_SESSION['sess_user'];?></h4></span>
-          </a>
-        </li>
-      </ul>
 
-      <ul class="navbar-nav  justify-content-end">
-            <li class="nav-item d-flex align-items-center">
-              <a href="javascript:;" class="nav-link text-muted font-weight-bold px-0">
-                
-                <span class="d-sm-inline d-none"><h4><a href="logout.php"><i class="fa fa-user fa-2xl text-muted"></i> Sign Out</a></h4></span>
-              </a>
-            </li>
-
-          </ul>
-
-    
-    </div>
   </div>
 </nav>
 <!-- End Navbar -->
+</div></div></div>
 
-
-</div>
-
-<br>
-<div class="container">
+<header class="header-2">
+  <div class="page-header min-vh-90 relative" style="background-image: url('images/wallpaper.jpg')">
+    <span class="mask bg-gradient-primary opacity-4"></span>
+    <div class="container">
   <div class="row">
     <div class="col-sm">
-    <span><h4>Current date and time : </h4></span>
-    <span id="datetime"></span>
-
-    <script>
-      // create a function to update the date and time
-      function updateDateTime() {
-        // create a new `Date` object
-        const now = new Date();
-
-        // get the current date and time as a string
-        const currentDateTime = now.toLocaleString();
-
-        // update the `textContent` property of the `span` element with the `id` of `datetime`
-        document.querySelector('#datetime').textContent = currentDateTime;
-      }
-
-      // call the `updateDateTime` function every second
-      setInterval(updateDateTime, 1000);
-    </script>
+      <span>One of three columns</span>
     </div>
-
     <div class="col-sm">
-    <center><img src="img/logo.png" height="100px" width="100px"></center>
-      
-              <h4 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Utumishi</h4>
-        <h5 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Here To Serve</h5>
+      <span>One of three columns</span>
     </div>
-
-    
-  <div class="col-sm">
-  <a href="newcases.php"> <button class="btn btn-icon btn-3 btn-primary" type="button">
-	<span class="btn-inner--icon"><i class="fa fa-exclamation me-sm-1"></i></span>
-  <span class="btn-inner--text"> Report Case</span>
-  </button> </a>
-  </div>
+    <div class="col-sm">
+      <span>One of three columns</span>
+    </div>
   </div>
 </div>
-
-
-<script src="js/core/popper.min.js" type="text/javascript"></script>
-<script src="js/core/bootstrap.min.js" type="text/javascript"></script>
-<script src="js/plugins/perfect-scrollbar.min.js"></script>
-<script src="js/plugins/rellax.min.js"></script>
-<script src="js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
-
+  </div>
+</header>
 </body>
+
 </html>
 <?php
 }
