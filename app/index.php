@@ -67,7 +67,7 @@
         if($email == $dbusername && $password == $dbpassword){
           session_start();
           $_SESSION['sess_user']=$email;
-          header("Location: home.php");
+          header("Location: home");
           }
           }
         else{
