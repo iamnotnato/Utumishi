@@ -1,12 +1,10 @@
 <?php
 session_start();
 $connect = mysqli_connect("localhost", "root", "", "utumishi");
-if(!isset($_SESSION['sess_user'])){
-  header("Location:index.php");
-}
-else
-{
-?>
+if(!isset($_SESSION['sess_user'])) {
+    header("Location:index.php");
+} else {
+    ?>
 
 <!--
 =========================================================
