@@ -39,8 +39,8 @@
         <span class="mask bg-gradient-dark opacity-6"></span>
         <div class="container my-auto">
         <center><img src="img/logo.png" alt="logo" style="width: 300px; height: 300px;"></center>
-            <div class="row">     
-                <div class="col-lg-4 col-md-8 col-12 mx-auto">             
+            <div class="row">
+                <div class="col-lg-4 col-md-8 col-12 mx-auto">
                     <div class="card z-index-0 fadeIn3 fadeInBottom">
                         <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                             <div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
@@ -106,7 +106,7 @@ if(isset($_POST['submit'])) {
     <?php
     }
 }
-?> 
+?>
    </div>
                     </div>
                 </div>
@@ -124,7 +124,7 @@ if(isset($_POST['submit'])) {
 </body>
 <footer class="mdl-mega-footer">
     <div class="mdl-mega-footer__middle-section">
-  
+
       <div class="mdl-mega-footer__drop-down-section">
         <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
         <h1 class="mdl-mega-footer__heading">Contact Us</h1>
@@ -143,7 +143,7 @@ if(isset($_POST['submit'])) {
           <li><a href=""><p class="white-text">Track Your Order</p></a></li>
         </ul>
       </div>
-  
+
       <div class="mdl-mega-footer__drop-down-section">
         <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
         <h1 class="mdl-mega-footer__heading">Info</h1>
@@ -156,7 +156,7 @@ if(isset($_POST['submit'])) {
             <b><p class="white-text">CLICK TO NAVIGATE</p></b></a></li>
         </ul>
       </div>
-  
+
       <div class="mdl-mega-footer__drop-down-section">
         <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
         <h1 class="mdl-mega-footer__heading">Payment Methods</h1>
@@ -165,14 +165,14 @@ if(isset($_POST['submit'])) {
           <li><a href=""><p class="white-text">CASH ON DELIVERY</p></a><br> </li>
         </ul>
       </div>
-  
+
     </div>
-  
+
     <div class="mdl-mega-footer__bottom-section float-center">
       <div class="mdl-logo "><center>&copy La Delight Hotel</center></div>
       <ul class="mdl-mega-footer__link-list">
       </ul>
     </div>
-  
+
   </footer>
 </html>
