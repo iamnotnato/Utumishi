@@ -70,44 +70,41 @@
 <?php
 date_default_timezone_set('Africa/Nairobi');
 
-if(isset($_POST['submit'])){
-  if(!empty($_POST['user']) && !empty($_POST['pass'])){
-    $user = $_POST['user'];
-    $pass = $_POST['pass'];
-    $logon = date("Y-m-d H:i:s");
-    $conn = new mysqli('localhost', 'root', '') or die(mysqli_error());
-    $db = mysqli_select_db($conn, 'utumishi') or die("DB Error");
+if(isset($_POST['submit'])) {
+    if(!empty($_POST['user']) && !empty($_POST['pass'])) {
+        $user = $_POST['user'];
+        $pass = $_POST['pass'];
+        $logon = date("Y-m-d H:i:s");
+        $conn = new mysqli('localhost', 'root', '') or die(mysqli_error());
+        $db = mysqli_select_db($conn, 'utumishi') or die("DB Error");
 
-    $query = mysqli_query($conn, "SELECT * FROM tm WHERE user='".$user."'");
-    $numrows = mysqli_num_rows($query);
-    if($numrows  == 0) {
-        $salted = "45sdsdaddjabdabda".$pass."adadavjdvuaudy";
-        $hashed = hash('murmur3f',$salted);
-      $sql = "INSERT INTO tm(user,pass,logon) VALUES('$user','$hashed','$logon')";
-      $result = mysqli_query($conn, $sql);
-      if($result){
-        ?>
+        $query = mysqli_query($conn, "SELECT * FROM tm WHERE user='".$user."'");
+        $numrows = mysqli_num_rows($query);
+        if($numrows  == 0) {
+            $salted = "45sdsdaddjabdabda".$pass."adadavjdvuaudy";
+            $hashed = hash('murmur3f', $salted);
+            $sql = "INSERT INTO tm(user,pass,logon) VALUES('$user','$hashed','$logon')";
+            $result = mysqli_query($conn, $sql);
+            if($result) {
+                ?>
       <script>
       alert('Your account has been successfully created. Proceed to Login');
     </script>
     <?php
     echo '<script>window.location="index.php"</script>';
-      }
-      else{
-        echo "Failed to create account";
-      }
-    }
-    else{
-      echo "That username already exists. Please choose another";
-    }
-  }
-  else{
-    ?>
+            } else {
+                echo "Failed to create account";
+            }
+        } else {
+            echo "That username already exists. Please choose another";
+        }
+    } else {
+        ?>
     <script>
       alert('Fields cannot be left blank');
     </script>
     <?php
-  }
+    }
 }
 ?> 
    </div>

@@ -62,17 +62,17 @@
           $db = mysqli_select_db($conn, 'utumishi') or die("DB Error");
 
           $salted = "45sdsdaddjabdabda".$pass."adadavjdvuaudy";
-          
-          $hashed = hash('murmur3f',$salted);
+
+          $hashed = hash('murmur3f', $salted);
 
           $pass =  $hashed;
 
           $query = mysqli_query($conn, "SELECT * FROM tm WHERE user ='".$user."' and pass ='".$pass."'");
-        
-          
-        $numrows = mysqli_num_rows($query);
-          
-        
+
+
+          $numrows = mysqli_num_rows($query);
+
+
           if($numrows != 0) {
               while($row = mysqli_fetch_assoc($query)) {
                   $dbusername = $row['user'];
