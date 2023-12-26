@@ -1,3 +1,13 @@
+<?php
+session_start();
+$connect = mysqli_connect("localhost", "root", "", "utumishi");
+if(!isset($_SESSION['sess_user'])){
+  header("Location:index.php");
+}
+else
+{
+?>
+
 <!--
 =========================================================
 * Material Kit 2 - v3.0.4
@@ -10,16 +20,6 @@
  =========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
-<?php
-session_start();
-$connect = mysqli_connect("localhost", "root", "", "utumishi");
-if(!isset($_SESSION['sess_user'])){
-  header("Location:index.php");
-}
-else
-{
-?>
-
 
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
@@ -29,7 +29,7 @@ else
 <link rel="apple-touch-icon" sizes="76x76" href="img/logo.png">
 <link rel="icon" type="image/png" href="img/logo.png">
 
-<title> Utumishi | LOGIN </title>
+<title> utumishi | LOGIN </title>
 
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
 <link href="css/nucleo-icons.css" rel="stylesheet" />

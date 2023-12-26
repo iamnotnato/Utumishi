@@ -39,18 +39,16 @@
             <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
             <center><img src="images/logo.png" height="300px" width="300px"></center>
               <div class="card card-plain">
-              <h4 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">utumishi</h4>
-        <h5 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Here To Serve</h5>
-
-
-       
+                <h4 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">utumishi</h4>
+                <h5 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Here To Serve</h5>
                 <div class="card-header pb-0 text-start">
-                  <h4 class="font-weight-bolder">Sign In</h4>
-                  <p class="mb-0">Enter your email and password to sign in.</p>
+                <h4 class="font-weight-bolder">Sign In</h4>
+                <p class="mb-0">Enter your email and password to sign in.</p>
                 </div>
+
                 <div class="card-body">
 
-                <?php
+<?php
   if(isset($_POST["submit"])){
     if(!empty($_POST['email']) && !empty($_POST['password'])){
       $email = $_POST['email'];
@@ -81,26 +79,30 @@
   }
 ?>
 
-                  <form role="form" action="" method="post">
-                    <div class="input-group input-group-outline my-3">
-                      <input type="email" name="email" class="form-control form-control-lg  input-group-outline" placeholder="Email" aria-label="Email">
-                    </div>
-                    <div class="input-group input-group-outline my-3">
-                      <input type="password" name="password" class="form-control form-control-lg  input-group-outline" placeholder="Password" aria-label="Password">
-                    </div>
-
-                    <div class="text-center">
-                      <button type="submit" name="submit" class="btn btn-lg btn-info btn-lg w-100 mt-4 mb-0">Sign in</button>
-                    </div>
-                  </form>
+              <form role="form" action="" method="post">
+                <div class="input-group input-group-outline my-3">
+                  <input type="email" name="email" class="form-control form-control-lg  input-group-outline" placeholder="Email" aria-label="Email">
                 </div>
+
+                <div class="input-group input-group-outline my-3">
+                  <input type="password" name="password" class="form-control form-control-lg  input-group-outline" placeholder="Password" aria-label="Password">
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" name="submit" class="btn btn-lg btn-info btn-lg w-100 mt-4 mb-0">Sign in</button>
+                </div>
+              </form>
+
+              </div>
                 
               </div>
             </div>
-            <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
-              <div class="position-relative bg-gradient-info h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden" style="background-image: url('images/logo.png');
-          background-size: cover;  background-repeat: no-repeat;">
-                <span class="mask bg-gradient-info opacity-6"></span>
+            
+<div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
+  <div class="position-relative bg-gradient-info h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden"
+    style="background-image: url('images/logo.png');
+    background-size: cover;  background-repeat: no-repeat;">
+  <span class="mask bg-gradient-info opacity-6"></span>
               </div>
             </div>
           </div>
@@ -108,8 +110,6 @@
       </div>
     </section>
   </main>
-  
-
 
 <script src="js/core/popper.min.js" type="text/javascript"></script>
 <script src="js/core/bootstrap.min.js" type="text/javascript"></script>
