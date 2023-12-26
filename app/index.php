@@ -40,8 +40,10 @@
             <center><img src="images/logo.png" height="300px" width="300px"></center>
               <div class="card card-plain">
                 <h4 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">utumishi</h4>
-                <h5 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Here To Serve</h5>
-                <div class="card-header pb-0 text-start">
+                <br>
+                <h5 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Empowering law enforcement with reliable technology.</h5>
+                <br>
+                <div class="card-header pb-0 text-center">
                 <h4 class="font-weight-bolder">Sign In</h4>
                 <p class="mb-0">Enter your email and password to sign in.</p>
                 </div>
@@ -100,9 +102,8 @@
             
 <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
   <div class="position-relative bg-gradient-info h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden"
-    style="background-image: url('images/logo.png');
-    background-size: cover;  background-repeat: no-repeat;">
-  <span class="mask bg-gradient-info opacity-6"></span>
+    style="background-image: url('images/wallpaper.jpg');
+    background-size: cover;">
               </div>
             </div>
           </div>

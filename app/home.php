@@ -29,7 +29,7 @@ else
 <link rel="apple-touch-icon" sizes="76x76" href="img/logo.png">
 <link rel="icon" type="image/png" href="img/logo.png">
 
-<title> utumishi | LOGIN </title>
+<title> utumishi | Home </title>
 
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
 <link href="css/nucleo-icons.css" rel="stylesheet" />
@@ -43,15 +43,40 @@ else
 <body class="index-page bg-gray-200">
   
   
-  <!-- Navbar -->
 <nav class="navbar navbar-expand-lg top-0 z-index-3 w-100 shadow-none my-3  navbar-transparent ">
-  <div class="container-fluid px-0">
-    <a class="navbar-brand font-weight-bolder ms-sm-3" href="https://demos.creative-tim.com/material-kit/index" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
-      Material Kit 2
+  <div class="container">
+    <a class="navbar-brand text-Gray 900" href="" rel="tooltip" title="Empowering law enforcement with reliable technology." data-placement="bottom" target="_blank">
+      <h5>utumishi</h5>
     </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navigation">
+      <ul class="navbar-nav navbar-nav-hover mx-auto">
+     
+        <li class="nav-item px-3">
+          <a class="nav-link text-muted">
+          <span class="d-sm-inline d-none"><h4>Signed in as : <?=$_SESSION['sess_user'];?></h4></span>
+          </a>
+        </li>
+      </ul>
 
+      <ul class="navbar-nav  justify-content-end">
+            <li class="nav-item d-flex align-items-center">
+              <a href="javascript:;" class="nav-link text-muted font-weight-bold px-0">
+                
+                <span class="d-sm-inline d-none"><h4><a href="logout.php"><i class="fa fa-user fa-2xl text-muted"></i> Sign Out</a></h4></span>
+              </a>
+            </li>
+
+          </ul>
+
+    
+    </div>
   </div>
 </nav>
+
+</header>
 <!-- End Navbar -->
 </div></div></div>
 
@@ -60,21 +85,51 @@ else
     <span class="mask bg-gradient-primary opacity-4"></span>
     <div class="container">
   <div class="row">
-    <div class="col-sm">
-      <span>One of three columns</span>
+
+     <div class="col-sm">
+    <span><h4>Current date and time : </h4></span>
+    <span id="datetime"></span>
+
+    
     </div>
+
     <div class="col-sm">
-      <span>One of three columns</span>
+    <center><img src="images/wallpaper.jpg" height="600px" width="600px"></center>
+      
+              <h4 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Utumishi</h4>
+        <h5 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Here To Serve</h5>
     </div>
-    <div class="col-sm">
-      <span>One of three columns</span>
-    </div>
+
+    
+  <div class="col-sm">
+  <a href="newcases.php"> <button class="btn btn-icon btn-3 btn-primary" type="button">
+	<span class="btn-inner--icon"><i class="fa fa-exclamation me-sm-1"></i></span>
+  <span class="btn-inner--text"> Report Case</span>
+  </button> </a>
+  </div>
   </div>
 </div>
   </div>
 </header>
 </body>
 
+
+<script>
+      // create a function to update the date and time
+      function updateDateTime() {
+        // create a new `Date` object
+        const now = new Date();
+
+        // get the current date and time as a string
+        const currentDateTime = now.toLocaleString();
+
+        // update the `textContent` property of the `span` element with the `id` of `datetime`
+        document.querySelector('#datetime').textContent = currentDateTime;
+      }
+
+      // call the `updateDateTime` function every second
+      setInterval(updateDateTime, 1000);
+    </script>
 </html>
 <?php
 }
