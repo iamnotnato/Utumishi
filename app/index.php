@@ -3,7 +3,7 @@
 * Material Kit 2 - v3.0.4
 =========================================================
 
-* Product Page:  https://www.creative-tim.com/product/material-kit 
+* Product Page:  https://www.creative-tim.com/product/material-kit
 * Copyright 2023 Creative Tim (https://www.creative-tim.com)
 * Coded by www.creative-tim.com
 
@@ -51,33 +51,30 @@
                 <div class="card-body">
 
 <?php
-  if(isset($_POST["submit"])){
-    if(!empty($_POST['email']) && !empty($_POST['password'])){
-      $email = $_POST['email'];
-      $password = $_POST['password'];
-      $conn = new mysqli('localhost', 'root', '') or die(mysqli_error());
-      $db = mysqli_select_db($conn, 'utumishi') or die("DB Error");
-      $query = mysqli_query($conn, "SELECT * FROM staff WHERE email='".$email."' and password='".$password."'");
-      $numrows = mysqli_num_rows($query);
-        if($numrows !=0){
-          while($row = mysqli_fetch_assoc($query)){
-          $dbusername = $row['email'];
-          $dbpassword = $row['password'];
+  if(isset($_POST["submit"])) {
+      if(!empty($_POST['email']) && !empty($_POST['password'])) {
+          $email = $_POST['email'];
+          $password = $_POST['password'];
+          $conn = new mysqli('localhost', 'root', '') or die(mysqli_error());
+          $db = mysqli_select_db($conn, 'utumishi') or die("DB Error");
+          $query = mysqli_query($conn, "SELECT * FROM staff WHERE email='".$email."' and password='".$password."'");
+          $numrows = mysqli_num_rows($query);
+          if($numrows != 0) {
+              while($row = mysqli_fetch_assoc($query)) {
+                  $dbusername = $row['email'];
+                  $dbpassword = $row['password'];
+              }
+              if($email == $dbusername && $password == $dbpassword) {
+                  session_start();
+                  $_SESSION['sess_user'] = $email;
+                  header("Location: home");
+              }
+          } else {
+              echo "<span class='btn btn-danger text-center'>Incorrect Login Details</span>";
           }
-        if($email == $dbusername && $password == $dbpassword){
-          session_start();
-          $_SESSION['sess_user']=$email;
-          header("Location: home");
-          }
-          }
-        else{
-         echo "<span class='btn btn-danger text-center'>Incorrect Login Details</span>";
-        }
-        }
-        else
-        {
+      } else {
           echo "<span class='btn btn-danger text-center'>All fields required</span>";
-        }
+      }
   }
 ?>
 
@@ -96,10 +93,10 @@
               </form>
 
               </div>
-                
+
               </div>
             </div>
-            
+
 <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
   <div class="position-relative bg-gradient-info h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden"
     style="background-image: url('images/wallpaper.jpg');

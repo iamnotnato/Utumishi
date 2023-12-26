@@ -1,6 +1,6 @@
 DirectoryIndex index.php
 
-RewriteEngine on 
+RewriteEngine on
 
 RewriteRule ^home?$ home.php
 
