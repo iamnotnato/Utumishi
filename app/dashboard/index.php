@@ -28,7 +28,7 @@
   <link href="css/nucleo-svg.css" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <link href="css/nucleo-svg.css" rel="stylesheet" />
-  <link id="pagestyle" href="css/argon-dashboard.css?v=2.0.4" rel="stylesheet" />
+  <link id="pagestyle" href="css/argon-dashboard.min.css?v=2.0.4" rel="stylesheet" />
 </head>
 
 <body class="">
