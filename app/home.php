@@ -1,3 +1,13 @@
+<?php
+session_start();
+$connect = mysqli_connect("localhost", "root", "", "utumishi");
+if(!isset($_SESSION['sess_user'])){
+  header("Location:index.php");
+}
+else
+{
+?>
+
 <!--
 =========================================================
 * Material Kit 2 - v3.0.4
@@ -10,16 +20,6 @@
  =========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
-<?php
-session_start();
-$connect = mysqli_connect("localhost", "root", "", "utumishi");
-if(!isset($_SESSION['sess_user'])){
-  header("Location:index.php");
-}
-else
-{
-?>
-
 
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
@@ -29,7 +29,7 @@ else
 <link rel="apple-touch-icon" sizes="76x76" href="img/logo.png">
 <link rel="icon" type="image/png" href="img/logo.png">
 
-<title> Utumishi | LOGIN </title>
+<title> utumishi | Home </title>
 
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
 <link href="css/nucleo-icons.css" rel="stylesheet" />
@@ -42,11 +42,11 @@ else
 
 <body class="index-page bg-gray-200">
   
-<nav
-  class="navbar navbar-expand-lg top-0 z-index-3 w-100 shadow-none my-3  navbar-transparent ">
+  
+<nav class="navbar navbar-expand-lg top-0 z-index-3 w-100 shadow-none my-3  navbar-transparent ">
   <div class="container">
-    <a class="navbar-brand  text-Gray 900 " href="" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
-      <h4>Utumishi</h4>
+    <a class="navbar-brand text-Gray 900" href="" rel="tooltip" title="Empowering law enforcement with reliable technology." data-placement="bottom" target="_blank">
+      <h5>utumishi</h5>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -56,7 +56,7 @@ else
      
         <li class="nav-item px-3">
           <a class="nav-link text-muted">
-          <span class="d-sm-inline d-none"><h4>Signed In As <?=$_SESSION['sess_user'];?></h4></span>
+          <span class="d-sm-inline d-none"><h4>Signed in as : <?=$_SESSION['sess_user'];?></h4></span>
           </a>
         </li>
       </ul>
@@ -75,19 +75,46 @@ else
     </div>
   </div>
 </nav>
+
+</header>
 <!-- End Navbar -->
+</div></div></div>
 
-
-</div>
-
-<br>
-<div class="container">
+<header class="header-2">
+  <div class="page-header min-vh-90 relative" style="background-image: url('images/wallpaper.jpg')">
+    <span class="mask bg-gradient-primary opacity-4"></span>
+    <div class="container">
   <div class="row">
-    <div class="col-sm">
+
+     <div class="col-sm">
     <span><h4>Current date and time : </h4></span>
     <span id="datetime"></span>
 
-    <script>
+    
+    </div>
+
+    <div class="col-sm">
+    <center><img src="images/wallpaper.jpg" height="600px" width="600px"></center>
+      
+              <h4 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Utumishi</h4>
+        <h5 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Here To Serve</h5>
+    </div>
+
+    
+  <div class="col-sm">
+  <a href="newcases.php"> <button class="btn btn-icon btn-3 btn-primary" type="button">
+	<span class="btn-inner--icon"><i class="fa fa-exclamation me-sm-1"></i></span>
+  <span class="btn-inner--text"> Report Case</span>
+  </button> </a>
+  </div>
+  </div>
+</div>
+  </div>
+</header>
+</body>
+
+
+<script>
       // create a function to update the date and time
       function updateDateTime() {
         // create a new `Date` object
@@ -103,33 +130,6 @@ else
       // call the `updateDateTime` function every second
       setInterval(updateDateTime, 1000);
     </script>
-    </div>
-
-    <div class="col-sm">
-    <center><img src="img/logo.png" height="100px" width="100px"></center>
-      
-              <h4 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Utumishi</h4>
-        <h5 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Here To Serve</h5>
-    </div>
-
-    
-  <div class="col-sm">
-  <a href="newcases.php"> <button class="btn btn-icon btn-3 btn-primary" type="button">
-	<span class="btn-inner--icon"><i class="fa fa-exclamation me-sm-1"></i></span>
-  <span class="btn-inner--text"> Report Case</span>
-  </button> </a>
-  </div>
-  </div>
-</div>
-
-
-<script src="js/core/popper.min.js" type="text/javascript"></script>
-<script src="js/core/bootstrap.min.js" type="text/javascript"></script>
-<script src="js/plugins/perfect-scrollbar.min.js"></script>
-<script src="js/plugins/rellax.min.js"></script>
-<script src="js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
-
-</body>
 </html>
 <?php
 }
