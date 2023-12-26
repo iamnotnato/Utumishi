@@ -3,7 +3,7 @@
 * Material Kit 2 - v3.0.4
 =========================================================
 
-* Product Page:  https://www.creative-tim.com/product/material-kit 
+* Product Page:  https://www.creative-tim.com/product/material-kit
 * Copyright 2023 Creative Tim (https://www.creative-tim.com)
 * Coded by www.creative-tim.com
 
@@ -93,10 +93,10 @@
               </form>
 
               </div>
-                
+
               </div>
             </div>
-            
+
 <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
   <div class="position-relative bg-gradient-info h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden"
     style="background-image: url('images/wallpaper.jpg');
