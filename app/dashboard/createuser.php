@@ -1,34 +1,34 @@
 <!--
-<!--
 =========================================================
-* Material Kit 2 - v3.0.4
+* Argon Dashboard 2 - v2.0.4
 =========================================================
 
-* Product Page:  https://www.creative-tim.com/product/material-kit
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Coded by www.creative-tim.com
+* Product Page: https://www.creative-tim.com/product/argon-dashboard
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://www.creative-tim.com/license)
+* Coded by Creative Tim
 
- =========================================================
+=========================================================
 
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
-
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<html lang="en">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="images/logo.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../images/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="../images/logo.png">
 
 <title> utumishi | LOGIN </title>
 
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
-<link href="css/nucleo-icons.css" rel="stylesheet" />
-<link href="css/nucleo-svg.css" rel="stylesheet" />
-<script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-<link id="pagestyle" href="css/material-kit.css?v=3.0.4" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <link href="css/nucleo-icons.css" rel="stylesheet" />
+  <link href="css/nucleo-svg.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link href="css/nucleo-svg.css" rel="stylesheet" />
+  <link id="pagestyle" href="css/argon-dashboard.min.css?v=2.0.4" rel="stylesheet" />
 </head>
 
 <body class="">
@@ -38,9 +38,9 @@
         <div class="container">
           <div class="row">
             <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
-            <center><img src="images/logo.png" height="300px" width="300px"></center>
+            <center><img src="../images/logo.png" height="300px" width="300px"></center>
               <div class="card card-plain">
-                <h4 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">utumishi</h4>
+                <h4 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">utumishi | Dashboard</h4>
                 <br>
                 <h5 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Empowering law enforcement with reliable technology.</h5>
                 <br>
@@ -100,7 +100,7 @@
 
 <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
   <div class="position-relative bg-gradient-info h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden"
-    style="background-image: url('images/wallpaper.jpg');
+    style="background-image: url('../images/wallpaper3.jpg');
     background-size: cover;">
               </div>
             </div>
@@ -110,12 +110,15 @@
     </section>
   </main>
 
-<script src="js/core/popper.min.js" type="text/javascript"></script>
-<script src="js/core/bootstrap.min.js" type="text/javascript"></script>
-<script src="js/plugins/perfect-scrollbar.min.js"></script>
-<script src="js/plugins/rellax.min.js"></script>
-<script src="js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+  <!--   Core JS Files   -->
+  <script src="js/core/popper.min.js"></script>
+  <script src="js/core/bootstrap.min.js"></script>
+  <script src="js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="js/plugins/smooth-scrollbar.min.js"></script>
 
+
+  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="js/argon-dashboard.min.js?v=2.0.4"></script>
 </body>
 
 </html>
