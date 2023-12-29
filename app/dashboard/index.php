@@ -58,7 +58,7 @@
           $password = $_POST['password'];
           $conn = new mysqli('localhost', 'root', '') or die(mysqli_error());
           $db = mysqli_select_db($conn, 'utumishi') or die("DB Error");
-          $query = mysqli_query($conn, "SELECT * FROM staff WHERE email='".$email."' and password='".$password."'");
+          $query = mysqli_query($conn, "SELECT * FROM admins WHERE email='".$email."' and password='".$password."'");
           $numrows = mysqli_num_rows($query);
           if($numrows != 0) {
               while($row = mysqli_fetch_assoc($query)) {
