@@ -26,7 +26,7 @@
 <link href="app/css/nucleo-svg.css" rel="stylesheet" />
 <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-<link id="pagestyle" href="app/css/material-kit.css?v=3.0.4" rel="stylesheet" />
+<link id="pagestyle" href="app/css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
 
 </head>
 
