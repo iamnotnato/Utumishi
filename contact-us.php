@@ -76,9 +76,6 @@
         </li>
       </ul>
 
-      <ul class="navbar-nav ms-auto">
-        <button class="btn bg-gradient-primary mb-0">Buy Now</button>
-      </ul>
     </div>
   </div>
 </nav>
