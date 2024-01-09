@@ -148,10 +148,14 @@
               </div>
               <div class="card-body text-center">
                 <h5 class="font-weight-normal">
-                  <a href="javascript:;">Get insights on Search</a>
+                  <a href="javascript:;">Seamless Integration</a>
                 </h5>
                 <p class="mb-0">
-                  Website visitors today demand a frictionless user expericence — especially when using search. Because of the hight standards.
+                Built on a robust framework, our system ensures reliability, security, and scalability.
+                <br>
+                    <br>  
+                
+                Benefit from the power to manage and organize critical data efficiently.
                 </p>
                 
               </div>
