@@ -19,7 +19,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="app/images/apple-icon.png">
   <link rel="icon" type="image/png" href="app/images/favicon.png">
   <title>
-    Material Kit 2 by Creative Tim
+    utumishi | Contact Us
   </title>
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
@@ -41,34 +41,35 @@
 
 <!-- Navbar Dark -->
 <nav
-  class="navbar navbar-expand-lg navbar-dark bg-gradient-info z-index-3 py-3">
+  class="navbar navbar-expand-lg navbar-dark bg-gradient-dark z-index-3 py-3">
   <div class="container">
-    <a class="navbar-brand text-white" href="" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
+    <a class="navbar-brand text-white" href="" rel="tooltip" title="Empowering law enforcement with reliable technology." data-placement="bottom" target="_blank">
       Utumishi
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navigation">
-      <ul class="navbar-nav navbar-nav-hover mx-auto">
-        <li class="nav-item px-3">
+
+      <ul class="navbar-nav ms-auto">
+
+      <li class="nav-item px-3">
           <a class="nav-link text-white opacity-8">
-           Home
+            Home
+          </a>
+        </li>
+
+      <li class="nav-item px-3">
+          <a class="nav-link text-white opacity-8">
+            Contact Us
           </a>
         </li>
 
         <li class="nav-item px-3">
           <a class="nav-link text-white opacity-8">
-            Contact
+            Login
           </a>
         </li>
-
-        <li class="nav-item px-3">
-          <a class="nav-link text-white opacity-8">
-           Login
-          </a>
-        </li>
-
       </ul>
 
     </div>
@@ -97,7 +98,7 @@
 
             
               <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
-                <div class="bg-gradient-info shadow-info border-radius-lg p-3">
+                <div class="bg-gradient-dark shadow-dark border-radius-lg p-3">
                   <h3 class="text-white text-primary mb-0">Contact us</h3>
                 </div>
               </div>
@@ -135,7 +136,7 @@
 
                     <div class="row">
                       <div class="col-md-12 text-center">
-                        <button name="submit" type="submit" class="btn bg-gradient-info mt-3 mb-0">Send Message</button>
+                        <button name="submit" type="submit" class="btn bg-gradient-dark mt-3 mb-0">Send Message</button>
                       </div>
                     </div>
                   </div>
@@ -196,12 +197,12 @@ $conn->close();
             <h6 class="text-sm">Company</h6>
             <ul class="flex-column ms-n3 nav">
               <li class="nav-item">
-                <a class="nav-link" href="https://www.creative-tim.com/presentation" target="_blank">
+                <a class="nav-link" href="" target="_blank">
                   About Us
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://www.creative-tim.com/blog" target="_blank">
+                <a class="nav-link" href="" target="_blank">
                   Blog
                 </a>
               </li>
@@ -214,7 +215,7 @@ $conn->close();
             <h6 class="text-sm">Help & Support</h6>
             <ul class="flex-column ms-n3 nav">
               <li class="nav-item">
-                <a class="nav-link" href="https://www.creative-tim.com/contact-us" target="_blank">
+                <a class="nav-link" href="contact-us.php" target="_blank">
                   Contact Us
                 </a>
               </li>
@@ -235,13 +236,12 @@ $conn->close();
       </div>
     </div>
   </footer>
+
+
   <!--   Core JS Files   -->
   <script src="app/js/core/popper.min.js" type="text/javascript"></script>
   <script src="app/js/core/bootstrap.min.js" type="text/javascript"></script>
   <script src="app/js/plugins/perfect-scrollbar.min.js"></script>
-  <!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
-  <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
   <script src="app/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
 </body>
 
