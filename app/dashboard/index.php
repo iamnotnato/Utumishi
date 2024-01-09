@@ -23,12 +23,12 @@
 
 <title> utumishi | LOGIN </title>
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
-  <link href="css/nucleo-icons.css" rel="stylesheet" />
-  <link href="css/nucleo-svg.css" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-  <link href="css/nucleo-svg.css" rel="stylesheet" />
-  <link id="pagestyle" href="css/argon-dashboard.min.css?v=2.0.4" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+<link href="../css/nucleo-icons.css" rel="stylesheet" />
+<link href="../css/nucleo-svg.css" rel="stylesheet" />
+<script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+<link id="pagestyle" href="../css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
 </head>
 
 <body class="">
@@ -89,7 +89,7 @@
                 </div>
 
                 <div class="text-center">
-                  <button type="submit" name="submit" class="btn btn-lg btn-info btn-lg w-100 mt-4 mb-0">Sign in</button>
+                  <button type="submit" name="submit" class="btn btn-lg btn-dark btn-lg w-100 mt-4 mb-0">Sign in</button>
                 </div>
               </form>
 
@@ -111,14 +111,11 @@
   </main>
 
   <!--   Core JS Files   -->
-  <script src="js/core/popper.min.js"></script>
-  <script src="js/core/bootstrap.min.js"></script>
-  <script src="js/plugins/perfect-scrollbar.min.js"></script>
-  <script src="js/plugins/smooth-scrollbar.min.js"></script>
-
-
-  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="js/argon-dashboard.min.js?v=2.0.4"></script>
+  <script src="../js/core/popper.min.js" type="text/javascript"></script>
+  <script src="../js/core/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/plugins/perfect-scrollbar.min.js"></script>
+  <!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
+  <script src="../js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
 </body>
 
 </html>

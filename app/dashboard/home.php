@@ -21,18 +21,16 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../img/logo.png">
   <link rel="icon" type="image/png" href="../img/logo.png">
   <title>
-    Argon Dashboard 2 by Creative Tim
+   utumishi | Dashboard
   </title>
-  <!--     Fonts and icons     -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
-  <!-- Nucleo Icons -->
-  <link href="css/nucleo-icons.css" rel="stylesheet" />
-  <link href="css/nucleo-svg.css" rel="stylesheet" />
-  <!-- Font Awesome Icons -->
-  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-  <link href="css/nucleo-svg.css" rel="stylesheet" />
-  <!-- CSS Files -->
-  <link id="pagestyle" href="css/argon-dashboard.min.css?v=2.0.4" rel="stylesheet" />
+
+
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+<link href="../css/nucleo-icons.css" rel="stylesheet" />
+<link href="../css/nucleo-svg.css" rel="stylesheet" />
+<script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+<link id="pagestyle" href="../css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
 </head>
 
 <body class="g-sidenav-show bg-dark">
@@ -43,8 +41,33 @@
       <a class="navbar-brand m-0" href="" target="_blank">
         <img src="../images/logo.png" class="navbar-brand-img h-100" alt="main_logo">
         <span class="ms-1 font-weight-bold">Utumishi</span>
+        <br>
+        <br>
+        <h6 class="ms-1 font-weight-bold">Logged In As : </h6>
+
+        <br>
+        <br>
+        <h6 class="ms-1 font-weight-bold">Online</h6>
+
+        <br>
+        <br>
+
+        <h6 class="ms-1 font-weight-bold">Sign Out</h6>
+
+        <br>
+        <br>
       </a>
     </div>
+
+    <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
     <hr class="horizontal dark mt-0">
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
@@ -138,12 +161,12 @@
     </nav>
     <!-- End Navbar -->
     <header class="bg-gradient-dark">
-    <div class="page-header min-vh-90" style="background-image: url('../images/bg9.jpg');">
+    <div class="page-header min-vh-90 opacity-5" style="background-image: url('../images/bg9.jpg');">
 
     <div class="container-fluid py-4">
       <div class="row mt-4">
         <div class="col-lg-7 mb-lg-0 mb-4">
-          <div class="card ">
+          <div class="card">
             <div class="card-header pb-0 p-3">
               <div class="d-flex justify-content-between">
                 <h6 class="mb-2">Sales by Country</h6>
@@ -309,25 +332,11 @@
   </main>
 
   <!--   Core JS Files   -->
-  <script src="js/core/popper.min.js"></script>
-  <script src="js/core/bootstrap.min.js"></script>
-  <script src="js/plugins/perfect-scrollbar.min.js"></script>
-  <script src="js/plugins/smooth-scrollbar.min.js"></script>
-  <script src="js/plugins/chartjs.min.js"></script>
-
-  <script>
-    var win = navigator.platform.indexOf('Win') > -1;
-    if (win && document.querySelector('#sidenav-scrollbar')) {
-      var options = {
-        damping: '0.5'
-      }
-      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
-    }
-  </script>
-  <!-- Github buttons -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="js/argon-dashboard.min.js?v=2.0.4"></script>
+  <script src="../js/core/popper.min.js" type="text/javascript"></script>
+  <script src="../js/core/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/plugins/perfect-scrollbar.min.js"></script>
+  <!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
+  <script src="../js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
 </body>
 
 </html>

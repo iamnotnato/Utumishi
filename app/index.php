@@ -27,7 +27,7 @@
 <link href="css/nucleo-svg.css" rel="stylesheet" />
 <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-<link id="pagestyle" href="css/material-kit.css?v=3.0.4" rel="stylesheet" />
+<link id="pagestyle" href="css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
 
 </head>
 
@@ -89,7 +89,7 @@
                 </div>
 
                 <div class="text-center">
-                  <button type="submit" name="submit" class="btn btn-lg btn-info btn-lg w-100 mt-4 mb-0">Sign in</button>
+                  <button type="submit" name="submit" class="btn btn-lg btn-dark btn-lg w-100 mt-4 mb-0">Sign in</button>
                 </div>
               </form>
 
