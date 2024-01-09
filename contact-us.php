@@ -201,11 +201,7 @@ $conn->close();
                   About Us
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="" target="_blank">
-                  Blog
-                </a>
-              </li>
+
             </ul>
           </div>
         </div>
