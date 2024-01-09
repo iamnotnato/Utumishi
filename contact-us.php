@@ -51,26 +51,26 @@
     </button>
     <div class="collapse navbar-collapse" id="navigation">
 
-      <ul class="navbar-nav ms-auto">
+    <ul class="navbar-nav ms-auto">
 
-      <li class="nav-item px-3">
-          <a class="nav-link text-white opacity-8">
-            Home
-          </a>
-        </li>
+<li class="nav-item px-3">
+    <a href="index.php" class="nav-link text-white opacity-8">
+      Home
+    </a>
+  </li>
 
-      <li class="nav-item px-3">
-          <a class="nav-link text-white opacity-8">
-            Contact Us
-          </a>
-        </li>
+<li class="nav-item px-3">
+    <a href="contact-us.php" class="nav-link text-white opacity-8">
+      Contact Us
+    </a>
+  </li>
 
-        <li class="nav-item px-3">
-          <a class="nav-link text-white opacity-8">
-            Login
-          </a>
-        </li>
-      </ul>
+  <li class="nav-item px-3">
+    <a href="app/index.php" class="nav-link text-white opacity-8">
+      Login
+    </a>
+  </li>
+</ul>
 
     </div>
   </div>
@@ -185,7 +185,7 @@ $conn->close();
       <div class=" row">
         <div class="col-md-3 mb-4 ms-auto">
           <div>
-            <a href="#">
+            <a href="index.php">
               <img src="app/images/logo.png" class="mb-3 footer-logo" alt="main_logo">
             </a>
             <h6 class="font-weight-bolder mb-4">Utumishi</h6>
@@ -197,7 +197,7 @@ $conn->close();
             <h6 class="text-sm">Company</h6>
             <ul class="flex-column ms-n3 nav">
               <li class="nav-item">
-                <a class="nav-link" href="" target="_blank">
+                <a class="nav-link" href="index.php" target="_blank">
                   About Us
                 </a>
               </li>
@@ -219,6 +219,7 @@ $conn->close();
             </ul>
           </div>
         </div>
+
 
         <div class="col-12">
           <div class="text-center">
