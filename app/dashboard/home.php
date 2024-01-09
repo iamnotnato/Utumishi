@@ -35,12 +35,12 @@
   <link id="pagestyle" href="css/argon-dashboard.min.css?v=2.0.4" rel="stylesheet" />
 </head>
 
-<body class="g-sidenav-show   bg-gray-100">
-  <div class="min-height-300 bg-primary position-absolute w-100"></div>
-  <aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 " id="sidenav-main">
+<body class="g-sidenav-show bg-dark">
+  <div class="min-height-300 bg-dark position-absolute w-100"></div>
+  <aside class="sidenav bg-secondary navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 " id="sidenav-main">
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
-      <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/argon-dashboard/pages/dashboard.html " target="_blank">
+      <a class="navbar-brand m-0" href="" target="_blank">
         <img src="../images/logo.png" class="navbar-brand-img h-100" alt="main_logo">
         <span class="ms-1 font-weight-bold">Utumishi</span>
       </a>
@@ -126,9 +126,10 @@
       </div>
     </nav>
     <!-- End Navbar -->
+    <header class="bg-gradient-dark">
+    <div class="page-header min-vh-90" style="background-image: url('../images/bg9.jpg');">
+
     <div class="container-fluid py-4">
-
-
       <div class="row mt-4">
         <div class="col-lg-7 mb-lg-0 mb-4">
           <div class="card ">
@@ -271,6 +272,9 @@
         </div>
 
       </div>
+      </div>
+  </header>
+
       <footer class="footer pt-3  ">
         <div class="container-fluid">
           <div class="row align-items-center justify-content-lg-between">
@@ -287,6 +291,10 @@
         </div>
       </footer>
     </div>
+
+
+
+   
   </main>
 
   <!--   Core JS Files   -->
