@@ -78,8 +78,8 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center mx-auto my-auto">
-            <h1 class="text-white">Work with an amazing design</h1>
-            <p class="lead mb-4 text-white opacity-8">We’re constantly trying to express ourselves and actualize our dreams. If you have the opportunity to play this game</p>
+            <h1 class="text-white">Utumishi Police Station Management System</h1>
+            <p class="lead mb-4 text-white opacity-8">Empowering law enforcement with reliable technology.</p>
     
     
           </div>
@@ -143,7 +143,7 @@
             <div class="card">
               <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                 <a class="d-block blur-shadow-image">
-                  <img src="https://images.unsplash.com/photo-1544717302-de2939b7ef71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="img-colored-shadow" class="img-fluid border-radius-lg">
+                  <img src="app/images/logo.png" alt="img-colored-shadow" class="img-fluid border-radius-lg">
                 </a>
               </div>
               <div class="card-body text-center">
