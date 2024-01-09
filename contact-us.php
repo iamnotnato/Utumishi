@@ -89,7 +89,7 @@
 
           <center><img src="app/images/logo.png" height="300px" width="300px"></center>
           <br>
-                <h4 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">utumishi | Dashboard</h4>
+                <h4 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">utumishi | Contact Form</h4>
                 <br>
                 <h5 class="text-Secondary font-weight-bolder text-center mt-2 mb-0">Empowering law enforcement with reliable technology.</h5>
                 <br>
