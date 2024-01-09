@@ -122,12 +122,17 @@
                         </div>
                       </div>
                     </div>
-                    <div class="form-group mb-0 mt-md-0 mt-4">
-                      <div class="input-group input-group-static mb-4">
-                        <label>How can we help you?</label>
-                        <textarea name="message" class="form-control" id="message" rows="6" placeholder="Describe your problem in at least 250 characters"></textarea>
+
+
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="input-group input-group-static mb-4">
+                          <label>How can we help you?</label>
+                          <input name="sentsms" type="text" class="form-control" placeholder="Enter your message here">
+                        </div>
                       </div>
-                    </div>
+
+
                     <div class="row">
                       <div class="col-md-12 text-center">
                         <button name="submit" type="submit" class="btn bg-gradient-info mt-3 mb-0">Send Message</button>
@@ -153,10 +158,10 @@ $conn = new mysqli($server, $user, $pass, $dbname);
 if(isset($_POST['submit'])){
 $fullname = mysqli_real_escape_string($conn, $_POST['fullname']);
 $email = mysqli_real_escape_string($conn, $_POST['email']);
-$messages = mysqli_real_escape_string($conn, $_POST['messages']);
+$sentsms = mysqli_real_escape_string($conn, $_POST['sentsms']);
 
-$sql = "INSERT INTO feedback (fullname, email , messages) 
-VALUES ('$fullname','$email, '$messages')";
+$sql = "INSERT INTO feedback (fullname, email, sentsms) 
+VALUES ('$fullname','$email','$sentsms')";
 
 if($conn->query($sql) === TRUE){
 ?>
