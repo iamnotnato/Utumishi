@@ -41,7 +41,7 @@
 
 <!-- Navbar Dark -->
 <nav
-  class="navbar navbar-expand-lg navbar-dark bg-gradient-dark z-index-3 py-3">
+  class="navbar navbar-expand-lg navbar-dark bg-gradient-info z-index-3 py-3">
   <div class="container">
     <a class="navbar-brand text-white" href="" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
       Utumishi
@@ -53,27 +53,22 @@
       <ul class="navbar-nav navbar-nav-hover mx-auto">
         <li class="nav-item px-3">
           <a class="nav-link text-white opacity-8">
-            Pages
+           Home
           </a>
         </li>
 
         <li class="nav-item px-3">
           <a class="nav-link text-white opacity-8">
-            Utilities
+            Contact
           </a>
         </li>
 
         <li class="nav-item px-3">
           <a class="nav-link text-white opacity-8">
-            Blocks
+           Login
           </a>
         </li>
 
-        <li class="nav-item px-3">
-          <a class="nav-link text-white opacity-8">
-            Docs
-          </a>
-        </li>
       </ul>
 
     </div>
@@ -117,13 +112,13 @@
                       <div class="col-md-6">
                         <div class="input-group input-group-static mb-4">
                           <label>Full Name</label>
-                          <input type="email" class="form-control" placeholder="Full Name">
+                          <input name="fullname" type="text" class="form-control" placeholder="Full Name">
                         </div>
                       </div>
                       <div class="col-md-6 ps-md-2">
                         <div class="input-group input-group-static mb-4">
                           <label>Your Email</label>
-                          <input type="email" class="form-control" placeholder="hello@utumishi.com">
+                          <input name="email" type="email" class="form-control" placeholder="hello@utumishi.com">
                         </div>
                       </div>
                     </div>
@@ -135,7 +130,7 @@
                     </div>
                     <div class="row">
                       <div class="col-md-12 text-center">
-                        <button type="submit" class="btn bg-gradient-info mt-3 mb-0">Send Message</button>
+                        <button name="submit" type="submit" class="btn bg-gradient-info mt-3 mb-0">Send Message</button>
                       </div>
                     </div>
                   </div>
@@ -147,6 +142,37 @@
       </div>
     </div>
   </section>
+
+<?php
+$server = "localhost";
+$user = "root";
+$pass = "";
+$dbname = "utumishi";
+
+$conn = new mysqli($server, $user, $pass, $dbname);
+if(isset($_POST['submit'])){
+$fullname = mysqli_real_escape_string($conn, $_POST['fullname']);
+$email = mysqli_real_escape_string($conn, $_POST['email']);
+$messages = mysqli_real_escape_string($conn, $_POST['messages']);
+
+$sql = "INSERT INTO feedback (fullname, email , messages) 
+VALUES ('$fullname','$email, '$messages')";
+
+if($conn->query($sql) === TRUE){
+?>
+  <script>
+      alert('Your message has been recorded.');
+    </script>
+    <?php
+  echo "Your message has been recorded.";
+}
+else{
+  echo "Error" . $sql . "<br>" . $conn->error;
+}
+$conn->close();
+}
+?>
+
   <!-- -------- END HEADER 8 w/ card over right bg image ------- -->
   <footer class="footer pt-5 mt-5">
     <div class="container">
