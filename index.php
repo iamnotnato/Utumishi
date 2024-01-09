@@ -97,7 +97,7 @@
             <div class="row justify-content-start">
               <div class="col-md-6">
                 <div class="info">
-                  <i class="material-icons text-3xl text-gradient text-dark mb-3">public</i>
+                  <i class="material-icons text-3xl text-gradient text-dark mb-3">password</i>
                   <h5>Encrypted Passwords for Maximum Security</h5>
                   <p>Rest easy knowing that user passwords are encrypted using industry-standard encryption algorithms. 
                     <br>
