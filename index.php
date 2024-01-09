@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" sizes="76x76" href="app/images/apple-touch-icon.png">
 <link rel="icon" type="image/png" href="app/images/logo.png">
 
-<title> utumishi </title>
+<title> utumishi | Home</title>
 
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
 <link href="app/css/nucleo-icons.css" rel="stylesheet" />
@@ -34,8 +34,8 @@
   <!-- Navbar Transparent -->
   <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3  navbar-transparent ">
     <div class="container">
-      <a class="navbar-brand  text-white " href="https://demos.creative-tim.com/material-kit/presentation" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
-        Material Kit 2
+      <a class="navbar-brand  text-white " href="#" rel="tooltip" title="Empowering law enforcement with reliable technology.m" data-placement="bottom" target="_blank">
+      Utumishi
       </a>
       <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon mt-2">
