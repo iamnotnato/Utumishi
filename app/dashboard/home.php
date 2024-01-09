@@ -52,7 +52,7 @@
         <br>
         <br>
 
-        <h6 class="ms-1 font-weight-bold">Sign Out</h6>
+        <a href="logout.php" class="ms-1 font-weight-bold">Sign Out</h6>
 
         <br>
         <br>
