@@ -95,9 +95,18 @@ else
 <li class="nav-item">
 <a class="nav-link" href="createuser">
  <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
-  <i class="material-symbols-outlined ms-1" style="font-size: 24px;">person_add</i>
+  <i class="material-symbols-outlined ms-1" style="font-size: 24px;">group</i>
 </div>
   <span class="ms-1 h5 text-white">Users</span>
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="createuser">
+ <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
+  <i class="material-symbols-outlined ms-1" style="font-size: 24px;">manage_accounts</i>
+</div>
+  <span class="ms-1 h5 text-white">Manage Users</span>
 </a>
 </li>
 
@@ -177,8 +186,133 @@ else
       </div>
     </section>
     <!-- END Testimonials w/ user image & text & info -->
-    <!-- START Blogs w/ 4 cards w/ image & text & link -->
+    <div class="col-lg-12 mb-lg-0 mb-4">
+          <div class="card ">
+            <div class="card-header pb-0 p-3">
+              <div class="d-flex justify-content-between">
+                <h6 class="mb-2">Feedback</h6>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table align-items-center ">
+              <thead>
+                    <tr>
+                    <th class="font-weight-bold mb-0 align-middle text-center">#</th>
+                      <th class="font-weight-bold mb-0 align-middle text-center">Full Name</th>
+                      <th class="font-weight-bold mb-0 align-middle text-center ps-2">Email</th>
+                      <th class="text-center font-weight-bold mb-0 align-middle text-center">Sent Sms</th>
+                       <th class="text-secondary opacity-7"></th>
+                    </tr>
+                  </thead>
+              <div class="d-flex flex-column justify-content-center">
+                        <?php 
+                    $query = "SELECT * FROM feedback ORDER BY id ASC";
+                    $result = mysqli_query($connect, $query);
+                    if(mysqli_num_rows($result) > 0)
+                    {
+                      while ($row = mysqli_fetch_array($result)) {
+                        ?>
+                    
+                      <tr>
+                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["id"]; ?></td>
+                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["fullname"]; ?></td>
+                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["email"]; ?></td>
+                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["sentsms"]; ?> </td>
+                        <td><input type="button" class="btn btn-danger" 
+                        onclick="deletefeedback(<?php echo $row['id']; ?>)" name="Delete" value="Delete"></td>
+                      </tr>
+                    
+                      <?php
+                    }
+}
+                      ?>
+                    </tr>
+                  </tbody>
+                </table>
 
+                <script language="javascript">
+  function deletefeedback(delid)
+  {
+    if(confirm("Do you want to delete this record?")){
+      window.location.href='deletefeedback.php?del_id=' +delid+'';
+      return true;
+    }
+  }
+</script>
+              </div>
+              </table>
+            </div>
+
+            
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+    <!-- START Blogs w/ 4 cards w/ image & text & link -->
+    <div class="col-lg-12 mb-lg-0 mb-4">
+          <div class="card ">
+            <div class="card-header pb-0 p-3">
+              <div class="d-flex justify-content-between">
+                <h6 class="mb-2">Feedback</h6>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table align-items-center ">
+              <thead>
+                    <tr>
+                    <th class="font-weight-bold mb-0 align-middle text-center">#</th>
+                      <th class="font-weight-bold mb-0 align-middle text-center">Full Name</th>
+                      <th class="font-weight-bold mb-0 align-middle text-center ps-2">Email</th>
+                      <th class="text-center font-weight-bold mb-0 align-middle text-center">Sent Sms</th>
+                       <th class="text-secondary opacity-7"></th>
+                    </tr>
+                  </thead>
+              <div class="d-flex flex-column justify-content-center">
+                        <?php 
+                    $query = "SELECT * FROM feedback ORDER BY id ASC";
+                    $result = mysqli_query($connect, $query);
+                    if(mysqli_num_rows($result) > 0)
+                    {
+                      while ($row = mysqli_fetch_array($result)) {
+                        ?>
+                    
+                      <tr>
+                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["id"]; ?></td>
+                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["fullname"]; ?></td>
+                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["email"]; ?></td>
+                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["sentsms"]; ?> </td>
+                        <td><input type="button" class="btn btn-danger" 
+                        onclick="deletefeedback(<?php echo $row['id']; ?>)" name="Delete" value="Delete"></td>
+                      </tr>
+                    
+                      <?php
+                    }
+}
+                      ?>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <script language="javascript">
+  function deletefeedback(delid)
+  {
+    if(confirm("Do you want to delete this record?")){
+      window.location.href='deletefeedback.php?del_id=' +delid+'';
+      return true;
+    }
+  }
+</script>
+              </div>
+              </table>
+            </div>
+
+            
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
         <!-- START Blogs w/ 4 cards w/ image & text & link -->
         <div class="col-lg-12 mb-lg-0 mb-4">
           <div class="card ">
