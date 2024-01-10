@@ -77,7 +77,7 @@ else
  <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
   <i class="material-symbols-outlined ms-1" style="font-size: 24px;">box_add</i>
 </div>
-  <span class="ms-1 h5 text-white">Cases</span>
+  <span class="ms-1 h5 text-white">File New Case</span>
 </a>
 </li>
 
@@ -196,12 +196,46 @@ else
     <!-- END Testimonials w/ user image & text & info -->
     <!-- START Blogs w/ 4 cards w/ image & text & link -->
         <br>
+        
+<?php
+date_default_timezone_set('Africa/Nairobi');
+$server = "localhost";
+$user = "root";
+$pass = "";
+$dbname = "utumishi";
 
+$conn = new mysqli($server, $user, $pass, $dbname);
+if(isset($_POST['submit'])){
+$namecomplainant = mysqli_real_escape_string($conn, $_POST['namecomplainant']);
+$idnumber = mysqli_real_escape_string($conn, $_POST['idnumber']);
+$telephonenumber = mysqli_real_escape_string($conn, $_POST['telephonenumber']);
+$crimedetails = mysqli_real_escape_string($conn, $_POST['crimedetails']);
+$filedby = $_SESSION['sess_user'];
+$logon = date("Y-m-d H:i:s");
+$timereported = $logon ;
+
+$sql = "INSERT INTO reportedcases (namecomplainant, idnumber , telephonenumber,crimedetails,timereported,filedby) 
+VALUES ('$namecomplainant','$idnumber', '$telephonenumber','$crimedetails','$timereported','$filedby')";
+
+if($conn->query($sql) === TRUE){
+?>
+  <script>
+      alert('Your case has been filed successfully.');
+    </script>
+    <?php
+    echo "<span class='btn btn-success text-center'>Your case has been filed successfully.</span>";
+}
+else{
+  echo "Error" . $sql . "<br>" . $conn->error;
+}
+$conn->close();
+}
+?>
         <!-- START Blogs w/ 4 cards w/ image & text & link -->
       <div class="card box-shadow-xl overflow-hidden mb-5">
 <div class="row">
 <div class="col-lg-12">
-<form class="p-3" id="contact-form" method="post">
+<form class="p-3" id="contact-form" method="post" role="form" action="">
 <div class="card-header px-4 py-sm-5 py-3">
 <h3>File New Case</h3>
 </div>
@@ -213,13 +247,13 @@ else
     <div class="col-sm">
     <div class="input-group input-group-static mb-4">
 <label>Name of Complainant</label>
-<input type="text" class="form-control" placeholder="Full Name">
+<input type="text" name="namecomplainant" class="form-control" placeholder="Full Name">
 </div>
     </div>
     <div class="col-sm">
     <div class="input-group input-group-static mb-4">
 <label>Phone Number</label>
-<input type="text" class="form-control" placeholder="Full Name">
+<input type="text" name="telephonenumber" class="form-control" placeholder="Enter Phone Number">
 </div>
     </div>
   </div>
@@ -233,13 +267,13 @@ else
     <div class="col-sm">
     <div class="input-group input-group-static mb-4">
 <label>ID Number</label>
-<input type="text" class="form-control" placeholder="Full Name">
+<input type="text" name="idnumber" class="form-control" placeholder="Enter ID Number">
 </div>
     </div>
     <div class="col-sm">
     <div class="input-group input-group-static mb-4">
 <label>Crime Details</label>
-<input type="text" class="form-control" placeholder="Full Name">
+<input type="text" name="crimedetails" class="form-control" placeholder="Specify Crime Details">
 </div>
     </div>
   </div>
@@ -253,13 +287,13 @@ else
     <div class="col-sm">
     <div class="input-group input-group-static mb-4">
 <label>Time Reported</label>
-<input type="text" class="form-control" placeholder="Full Name">
+<input type="text" name="timereported" class="form-control" disabled placeholder="Current Time will be recorded">
 </div>
     </div>
     <div class="col-sm">
     <div class="input-group input-group-static mb-4">
 <label>Filed by:</label>
-<input type="text" class="form-control" placeholder="Full Name">
+<input type="text" value="<?=$_SESSION['sess_user'];?>" name="filedby" class="form-control" disabled placeholder="<?=$_SESSION['sess_user'];?>">
 </div>
     </div>
   </div>
@@ -268,7 +302,7 @@ else
 
 
 <div class="col-md-6 text-end ms-auto">
-<button type="submit" class="btn bg-gradient-dark mb-0">File Case</button>
+<button type="submit" name="submit" class="btn bg-gradient-dark mb-0">File Case</button>
 </div>
 
 </div>
