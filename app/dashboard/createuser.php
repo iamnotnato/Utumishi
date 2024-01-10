@@ -98,7 +98,7 @@ else
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
             <li class="breadcrumb-item text-sm text-white active" aria-current="page">Dashboard/</li>
           </ol>
-          <h6 class="font-weight-bolder text-white mb-0">New Case/</h6>
+          <h6 class="font-weight-bolder text-white mb-0">Manage Users/</h6>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -146,15 +146,7 @@ else
                  <a href="logout" class="mb-0 h4"> <i class="material-symbols-outlined ms-1" style="font-size: 24px;">switch_account</i> Sign Out</a> 
                </div>
 
-                </div>
-
-
-                <br>
-                <br>
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                  <h3 class="mb-0">File New Case</h3>                       
-                </div>
-              
+                </div>              
               </div>
 
 
@@ -169,7 +161,7 @@ else
                     <div class="card z-index-0 fadeIn3 fadeInBottom">
                         <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                             <div class="bg-gradient-dark shadow-dark border-radius-lg py-3 pe-1">
-                                <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Register</h4>
+                                <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Register Administators</h4>
 
                             </div>
                         </div>
@@ -177,7 +169,7 @@ else
                             <form role="form" action="" method="post" class="text-start">
                                 <div class="input-group input-group-outline my-3">
                                     <label class="form-label">Username</label>
-                                    <input type="text" class="form-control" name="user">
+                                    <input type="text" class="form-control" name="email">
                                 </div>
                                 <div class="input-group input-group-outline mb-3">
                                     <label class="form-label">Password</label>
@@ -187,28 +179,24 @@ else
                                 <div class="text-center">
                                     <button type="submit" value="Login" name="submit" class="btn bg-gradient-dark w-100 my-4 mb-2">Register</button>
                                 </div>
-                                <p class="mt-4 text-sm text-center"><a href="sign-in.php">
-                                    Already have an account?
-                                  </a>
-                                </p>
+                               
                             </form>
 <?php
 date_default_timezone_set('Africa/Nairobi');
 
 if(isset($_POST['submit'])){
-  if(!empty($_POST['user']) && !empty($_POST['pass'])){
-    $user = $_POST['user'];
+  if(!empty($_POST['email']) && !empty($_POST['pass'])){
+    $user = $_POST['email'];
     $pass = $_POST['pass'];
-    $logon = date("Y-m-d H:i:s");
-    $conn = new mysqli('localhost', 'root', '') or die(mysqli_error());
+     $conn = new mysqli('localhost', 'root', '') or die(mysqli_error());
     $db = mysqli_select_db($conn, 'utumishi') or die("DB Error");
 
-    $query = mysqli_query($conn, "SELECT * FROM tm WHERE user='".$user."'");
+    $query = mysqli_query($conn, "SELECT * FROM admins WHERE email='".$email."'");
     $numrows = mysqli_num_rows($query);
     if($numrows  == 0) {
         $salted = "45sdsdaddjabdabda".$pass."adadavjdvuaudy";
         $hashed = hash('murmur3f',$salted);
-      $sql = "INSERT INTO tm(user,pass,logon) VALUES('$user','$hashed','$logon')";
+      $sql = "INSERT INTO admins (email,pass) VALUES('$user','$hashed')";
       $result = mysqli_query($conn, $sql);
       if($result){
         ?>
@@ -216,7 +204,7 @@ if(isset($_POST['submit'])){
       alert('Your account has been successfully created. Proceed to Login');
     </script>
     <?php
-    echo '<script>window.location="index.php"</script>';
+    echo '<script>window.location="createuser.php"</script>';
       }
       else{
         echo "Failed to create account";
@@ -241,15 +229,7 @@ if(isset($_POST['submit'])){
             </div>
 
 
-            <br>
-            <br>
-
-
-
-            <div class="d-flex justify-content-between align-items-center mb-2">
-                  <h3 class="mb-0">File New Case</h3>                       
-                </div>
-              
+           
               </div>
 
 
@@ -258,25 +238,12 @@ if(isset($_POST['submit'])){
               <div class="row py-5">
               <div class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mx-auto">
                 <div class="d-flex justify-content-between align-items-center mb-2">
-                  <h3 class="mb-0"><?=$_SESSION['sess_user'];?></h3>
-                  <div class="d-block">
-                 
-                  <h4 class="mb-0"> <i class="material-symbols-outlined ms-1 text-success" style="font-size: 24px;">signal_cellular_alt</i> Online</h4> 
-                </div>
-
-                <div class="d-block">
-                 
-                 <a href="logout" class="mb-0 h4"> <i class="material-symbols-outlined ms-1" style="font-size: 24px;">switch_account</i> Sign Out</a> 
-               </div>
-
+                  
                 </div>
 
 
                 <br>
                 <br>
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                  <h3 class="mb-0">File New Case</h3>                       
-                </div>
               
               </div>
 
@@ -293,7 +260,7 @@ if(isset($_POST['submit'])){
                     <div class="card z-index-0 fadeIn3 fadeInBottom">
                         <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                             <div class="bg-gradient-dark shadow-dark border-radius-lg py-3 pe-1">
-                                <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Register</h4>
+                                <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Register Staff Users</h4>
 
                             </div>
                         </div>
@@ -301,38 +268,34 @@ if(isset($_POST['submit'])){
                             <form role="form" action="" method="post" class="text-start">
                                 <div class="input-group input-group-outline my-3">
                                     <label class="form-label">Username</label>
-                                    <input type="text" class="form-control" name="user">
+                                    <input type="text" class="form-control" name="emails">
                                 </div>
                                 <div class="input-group input-group-outline mb-3">
                                     <label class="form-label">Password</label>
-                                    <input type="password" class="form-control" name="pass">
+                                    <input type="password" class="form-control" name="passwords">
                                 </div>
 
                                 <div class="text-center">
-                                    <button type="submit" value="Login" name="submit" class="btn bg-gradient-dark w-100 my-4 mb-2">Register</button>
+                                    <button type="submit" value="Login" name="submitted" class="btn bg-gradient-dark w-100 my-4 mb-2">Register</button>
                                 </div>
-                                <p class="mt-4 text-sm text-center"><a href="sign-in.php">
-                                    Already have an account?
-                                  </a>
-                                </p>
+                                
                             </form>
 <?php
 date_default_timezone_set('Africa/Nairobi');
 
-if(isset($_POST['submit'])){
-  if(!empty($_POST['user']) && !empty($_POST['pass'])){
-    $user = $_POST['user'];
-    $pass = $_POST['pass'];
-    $logon = date("Y-m-d H:i:s");
-    $conn = new mysqli('localhost', 'root', '') or die(mysqli_error());
+if(isset($_POST['submitted'])){
+  if(!empty($_POST['emails']) && !empty($_POST['passwords'])){
+    $emails = $_POST['emails'];
+    $passwords = $_POST['passwords'];
+      $conn = new mysqli('localhost', 'root', '') or die(mysqli_error());
     $db = mysqli_select_db($conn, 'utumishi') or die("DB Error");
 
-    $query = mysqli_query($conn, "SELECT * FROM tm WHERE user='".$user."'");
+    $query = mysqli_query($conn, "SELECT * FROM staff WHERE emails='".$emails."'");
     $numrows = mysqli_num_rows($query);
     if($numrows  == 0) {
         $salted = "45sdsdaddjabdabda".$pass."adadavjdvuaudy";
         $hashed = hash('murmur3f',$salted);
-      $sql = "INSERT INTO tm(user,pass,logon) VALUES('$user','$hashed','$logon')";
+      $sql = "INSERT INTO staff(emails,passwords) VALUES('$emails','$hashed')";
       $result = mysqli_query($conn, $sql);
       if($result){
         ?>
@@ -340,7 +303,7 @@ if(isset($_POST['submit'])){
       alert('Your account has been successfully created. Proceed to Login');
     </script>
     <?php
-    echo '<script>window.location="index.php"</script>';
+    echo '<script>window.location="createuser.php"</script>';
       }
       else{
         echo "Failed to create account";
