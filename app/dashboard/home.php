@@ -252,7 +252,7 @@ else
           <div class="card ">
             <div class="card-header pb-0 p-3">
               <div class="d-flex justify-content-between">
-                <h6 class="mb-2">Feedback</h6>
+                <h6 class="mb-2">Staff</h6>
               </div>
             </div>
             <div class="table-responsive">
@@ -260,15 +260,14 @@ else
               <thead>
                     <tr>
                     <th class="font-weight-bold mb-0 align-middle text-center">#</th>
-                      <th class="font-weight-bold mb-0 align-middle text-center">Full Name</th>
                       <th class="font-weight-bold mb-0 align-middle text-center ps-2">Email</th>
-                      <th class="text-center font-weight-bold mb-0 align-middle text-center">Sent Sms</th>
+                      <th class="text-center font-weight-bold mb-0 align-middle text-center">Password</th>
                        <th class="text-secondary opacity-7"></th>
                     </tr>
                   </thead>
               <div class="d-flex flex-column justify-content-center">
                         <?php 
-                    $query = "SELECT * FROM feedback ORDER BY id ASC";
+                    $query = "SELECT * FROM staff ORDER BY id ASC";
                     $result = mysqli_query($connect, $query);
                     if(mysqli_num_rows($result) > 0)
                     {
@@ -277,11 +276,10 @@ else
                     
                       <tr>
                         <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["id"]; ?></td>
-                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["fullname"]; ?></td>
-                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["email"]; ?></td>
-                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["sentsms"]; ?> </td>
+                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["emails"]; ?></td>
+                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["passwords"]; ?> </td>
                         <td><input type="button" class="btn btn-danger" 
-                        onclick="deletefeedback(<?php echo $row['id']; ?>)" name="Delete" value="Delete"></td>
+                        onclick="deletestaff(<?php echo $row['id']; ?>)" name="Delete" value="Delete"></td>
                       </tr>
                     
                       <?php
@@ -293,10 +291,10 @@ else
                 </table>
 
                 <script language="javascript">
-  function deletefeedback(delid)
+  function deletestaff(delid)
   {
     if(confirm("Do you want to delete this record?")){
-      window.location.href='deletefeedback.php?del_id=' +delid+'';
+      window.location.href='deletestaff.php?del_id=' +delid+'';
       return true;
     }
   }
