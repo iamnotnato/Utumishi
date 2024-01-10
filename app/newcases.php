@@ -63,7 +63,7 @@ else
   <ul class="navbar-nav">
 
 <li class="nav-item">
-<a class="nav-link active" href="home">
+<a class="nav-link" href="home">
  <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
   <i class="material-symbols-outlined ms-1" style="font-size: 24px;">home</i>
 </div>
@@ -80,37 +80,6 @@ else
   <span class="ms-1 h5 text-white">File New Case</span>
 </a>
 </li>
-
-
-<li class="nav-item">
-<a class="nav-link active" href="home">
- <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
-  <i class="material-symbols-outlined ms-1" style="font-size: 24px;">home</i>
-</div>
-  <span class="ms-1 h5 text-white">...</span>
-</a>
-</li>
-
-
-<li class="nav-item">
-<a class="nav-link active" href="home">
- <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
-  <i class="material-symbols-outlined ms-1" style="font-size: 24px;">home</i>
-</div>
-  <span class="ms-1 h5 text-white">...</span>
-</a>
-</li>
-
-
-<li class="nav-item">
-<a class="nav-link active" href="home">
- <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
-  <i class="material-symbols-outlined ms-1" style="font-size: 24px;">home</i>
-</div>
-  <span class="ms-1 h5 text-white">...</span>
-</a>
-</li>
-
 
 <hr class="horizontal dark mt-0">
 
@@ -129,7 +98,7 @@ else
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
             <li class="breadcrumb-item text-sm text-white active" aria-current="page">Dashboard/</li>
           </ol>
-          <h6 class="font-weight-bolder text-white mb-0">Home/</h6>
+          <h6 class="font-weight-bolder text-white mb-0">New Case/</h6>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">

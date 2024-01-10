@@ -54,7 +54,7 @@ else
  <i class="fas fa-times p-3 cursor-pointer text-secondary position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
 <a class="navbar-brand m-0" href="" target="_blank">
 <img src="../images/logo.png" class="navbar-brand-images h-100" alt="main_logo">
-<span class="ms-1 h5 text-white"> utumishi </span>
+<span class="ms-1 h5 text-white">utumishi</span>
 </a>
 </div>
 
@@ -63,7 +63,7 @@ else
   <ul class="navbar-nav">
 
 <li class="nav-item">
-<a class="nav-link active" href="home">
+<a class="nav-link" href="home">
  <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
   <i class="material-symbols-outlined ms-1" style="font-size: 24px;">home</i>
 </div>
@@ -73,21 +73,11 @@ else
 
 
 <li class="nav-item">
-<a class="nav-link active" href="home">
+<a class="nav-link active" href="newcases">
  <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
-  <i class="material-symbols-outlined ms-1" style="font-size: 24px;">home</i>
+  <i class="material-symbols-outlined ms-1" style="font-size: 24px;">box_add</i>
 </div>
-  <span class="ms-1 h5 text-white">Cases</span>
-</a>
-</li>
-
-
-<li class="nav-item">
-<a class="nav-link active" href="home">
- <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
-  <i class="material-symbols-outlined ms-1" style="font-size: 24px;">home</i>
-</div>
-  <span class="ms-1 h5 text-white">Feedback</span>
+  <span class="ms-1 h5 text-white">File New Case</span>
 </a>
 </li>
 
@@ -100,7 +90,7 @@ else
 </aside>
 
   
-<main class="main-content position-relative border-radius-lg ">
+  <main class="main-content position-relative border-radius-lg ">
     <!-- Navbar -->
     <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur" data-scroll="false">
       <div class="container-fluid py-1 px-3">
@@ -108,7 +98,7 @@ else
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
             <li class="breadcrumb-item text-sm text-white active" aria-current="page">Dashboard/</li>
           </ol>
-          <h6 class="font-weight-bolder text-white mb-0">Home/</h6>
+          <h6 class="font-weight-bolder text-white mb-0">New Case/</h6>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -156,10 +146,183 @@ else
                  <a href="logout" class="mb-0 h4"> <i class="material-symbols-outlined ms-1" style="font-size: 24px;">switch_account</i> Sign Out</a> 
                </div>
 
-</div>
-                
+                </div>
+
+
+                <br>
+                <br>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h3 class="mb-0">File New Case</h3>                       
+                </div>
+              
               </div>
+
+
+
+
+              
             </div>
+
+
+            <div class="row">     
+                <div class="col-lg-4 col-md-8 col-12 mx-auto">             
+                    <div class="card z-index-0 fadeIn3 fadeInBottom">
+                        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                            <div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
+                                <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Register</h4>
+
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <form role="form" action="" method="post" class="text-start">
+                                <div class="input-group input-group-outline my-3">
+                                    <label class="form-label">Username</label>
+                                    <input type="text" class="form-control" name="user">
+                                </div>
+                                <div class="input-group input-group-outline mb-3">
+                                    <label class="form-label">Password</label>
+                                    <input type="password" class="form-control" name="pass">
+                                </div>
+
+                                <div class="text-center">
+                                    <button type="submit" value="Login" name="submit" class="btn bg-gradient-primary w-100 my-4 mb-2">Register</button>
+                                </div>
+                                <p class="mt-4 text-sm text-center"><a href="sign-in.php">
+                                    Already have an account?
+                                  </a>
+                                </p>
+                            </form>
+<?php
+date_default_timezone_set('Africa/Nairobi');
+
+if(isset($_POST['submit'])){
+  if(!empty($_POST['user']) && !empty($_POST['pass'])){
+    $user = $_POST['user'];
+    $pass = $_POST['pass'];
+    $logon = date("Y-m-d H:i:s");
+    $conn = new mysqli('localhost', 'root', '') or die(mysqli_error());
+    $db = mysqli_select_db($conn, 'utumishi') or die("DB Error");
+
+    $query = mysqli_query($conn, "SELECT * FROM tm WHERE user='".$user."'");
+    $numrows = mysqli_num_rows($query);
+    if($numrows  == 0) {
+        $salted = "45sdsdaddjabdabda".$pass."adadavjdvuaudy";
+        $hashed = hash('murmur3f',$salted);
+      $sql = "INSERT INTO tm(user,pass,logon) VALUES('$user','$hashed','$logon')";
+      $result = mysqli_query($conn, $sql);
+      if($result){
+        ?>
+      <script>
+      alert('Your account has been successfully created. Proceed to Login');
+    </script>
+    <?php
+    echo '<script>window.location="index.php"</script>';
+      }
+      else{
+        echo "Failed to create account";
+      }
+    }
+    else{
+      echo "That username already exists. Please choose another";
+    }
+  }
+  else{
+    ?>
+    <script>
+      alert('Fields cannot be left blank');
+    </script>
+    <?php
+  }
+}
+?> 
+   </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+
+
+
+            <div class="row">     
+                <div class="col-lg-4 col-md-8 col-12 mx-auto">             
+                    <div class="card z-index-0 fadeIn3 fadeInBottom">
+                        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                            <div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
+                                <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Register</h4>
+
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <form role="form" action="" method="post" class="text-start">
+                                <div class="input-group input-group-outline my-3">
+                                    <label class="form-label">Username</label>
+                                    <input type="text" class="form-control" name="user">
+                                </div>
+                                <div class="input-group input-group-outline mb-3">
+                                    <label class="form-label">Password</label>
+                                    <input type="password" class="form-control" name="pass">
+                                </div>
+
+                                <div class="text-center">
+                                    <button type="submit" value="Login" name="submit" class="btn bg-gradient-primary w-100 my-4 mb-2">Register</button>
+                                </div>
+                                <p class="mt-4 text-sm text-center"><a href="sign-in.php">
+                                    Already have an account?
+                                  </a>
+                                </p>
+                            </form>
+<?php
+date_default_timezone_set('Africa/Nairobi');
+
+if(isset($_POST['submit'])){
+  if(!empty($_POST['user']) && !empty($_POST['pass'])){
+    $user = $_POST['user'];
+    $pass = $_POST['pass'];
+    $logon = date("Y-m-d H:i:s");
+    $conn = new mysqli('localhost', 'root', '') or die(mysqli_error());
+    $db = mysqli_select_db($conn, 'utumishi') or die("DB Error");
+
+    $query = mysqli_query($conn, "SELECT * FROM tm WHERE user='".$user."'");
+    $numrows = mysqli_num_rows($query);
+    if($numrows  == 0) {
+        $salted = "45sdsdaddjabdabda".$pass."adadavjdvuaudy";
+        $hashed = hash('murmur3f',$salted);
+      $sql = "INSERT INTO tm(user,pass,logon) VALUES('$user','$hashed','$logon')";
+      $result = mysqli_query($conn, $sql);
+      if($result){
+        ?>
+      <script>
+      alert('Your account has been successfully created. Proceed to Login');
+    </script>
+    <?php
+    echo '<script>window.location="index.php"</script>';
+      }
+      else{
+        echo "Failed to create account";
+      }
+    }
+    else{
+      echo "That username already exists. Please choose another";
+    }
+  }
+  else{
+    ?>
+    <script>
+      alert('Fields cannot be left blank');
+    </script>
+    <?php
+  }
+}
+?> 
+   </div>
+                    </div>
+                </div>
+            </div>
+
+            
 
           </div>
         </div>
@@ -167,83 +330,9 @@ else
     </section>
     <!-- END Testimonials w/ user image & text & info -->
     <!-- START Blogs w/ 4 cards w/ image & text & link -->
-
-        <!-- START Blogs w/ 4 cards w/ image & text & link -->
-        <div class="col-lg-12 mb-lg-0 mb-4">
-          <div class="card ">
-            <div class="card-header pb-0 p-3">
-              <div class="d-flex justify-content-between">
-                <h6 class="mb-2">Reported Cases</h6>
-              </div>
-            </div>
-            <div class="table-responsive">
-              <table class="table align-items-center ">
-              <thead>
-                    <tr>
-                    <th class="font-weight-bold mb-0 align-middle text-center">#</th>
-                      <th class="font-weight-bold mb-0 align-middle text-center">Complainant Name</th>
-                      <th class="font-weight-bold mb-0 align-middle text-center ps-2">Telephone Number</th>
-                      <th class="text-center font-weight-bold mb-0 align-middle text-center">ID Number</th>
-                      <th class="text-center font-weight-bold mb-0 align-middle text-center">Crime Details</th>
-                      <th class="text-center font-weight-bold mb-0 align-middle text-center">Time Reported</th>
-                      <th class="text-center font-weight-bold mb-0 align-middle text-center">Filed By:</th>
-                      <th class="text-secondary opacity-7"></th>
-                    </tr>
-                  </thead>
-              <div class="d-flex flex-column justify-content-center">
-                        <?php 
-                    $query = "SELECT * FROM reportedcases ORDER BY id ASC";
-                    $result = mysqli_query($connect, $query);
-                    if(mysqli_num_rows($result) > 0)
-                    {
-                      while ($row = mysqli_fetch_array($result)) {
-                        ?>
-                    
-                      <tr>
-                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["id"]; ?></td>
-                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["namecomplainant"]; ?></td>
-                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["telephonenumber"]; ?></td>
-                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["idnumber"]; ?> </td>
-                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["crimedetails"]; ?> </td>
-                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["timereported"]; ?> </td>
-                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["filedby"]; ?> </td>
-                        <td><input type="button" class="btn btn-danger" 
-                        onclick="deleteme(<?php echo $row['id']; ?>)" name="Delete" value="Delete"></td>
-                      </tr>
-                    
-                      <?php
-                    }
-}
-                      ?>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <script language="javascript">
-  function deleteme(delid)
-  {
-    if(confirm("Do you want to delete this record?")){
-      window.location.href='deleterecord.php?del_id=' +delid+'';
-      return true;
-    }
-  }
-</script>
-              </div>
-              </table>
-            </div>
-          </div>
-        </div>
-        
+             
     <!-- END Blogs w/ 4 cards w/ image & text & link -->
     <!-- END Blogs w/ 4 cards w/ image & text & link -->
-  </div>
-
-
-
- 
- 
-           </div>
-  </div>
   
   </main>
 
@@ -264,6 +353,7 @@ else
       </div>
     </div>
   </footer>
+
   !--   Core JS Files   -->
 <script src="../js/core/popper.min.js" type="text/javascript"></script>
 <script src="../js/core/bootstrap.min.js" type="text/javascript"></script>
