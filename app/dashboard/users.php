@@ -143,6 +143,32 @@ else
             <span class="h5 text-white">Users</span>
           </a>
         </li>
+
+
+        <li class="nav-item">
+        <div class="dropdown">
+  <a href="#" class="btn bg-gradient-dark dropdown-toggle " data-bs-toggle="dropdown" id="navbarDropdownMenuLink2">
+      <img src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/icons/flags/US.png" /> Flags
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+      <li>
+          <a class="dropdown-item" href="#">
+            <img src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/icons/flags/DE.png" /> Deutsch
+          </a>
+      </li>
+      <li>
+          <a class="dropdown-item" href="#">
+            <img src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/icons/flags/GB.png" /> English(UK)
+          </a>
+      </li>
+      <li>
+          <a class="dropdown-item" href="#">
+            <img src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/icons/flags/BR.png" /> Brasil
+          </a>
+      </li>
+  </ul>
+</div>
+        </li>
         
 
       </ul>
@@ -492,6 +518,8 @@ else
               <h6 class="text-white text-capitalize text-center ps-3">Products</h6>
                 <center><button type="button" class="btn btn-block bg-gradient-primary mb-3" data-bs-toggle="modal" data-bs-target="#modal-default">Add User</button></center>
             </div>
+
+           
             </div>
             <div class="card-body px-0 pb-2">
               <div class="table-responsive p-0">
@@ -560,6 +588,10 @@ else
       </div>
       </div>
 
+
+
+
+  
       <footer class="footer pt-3  ">
         <div class="container-fluid">
           <div class="row align-items-center justify-content-lg-between">
@@ -582,12 +614,36 @@ else
    
   </main>
 
-  <!--   Core ../js Files   -->
-  <script src="../js/core/popper.min.../js" type="text/javascript"></script>
-  <script src="../js/core/bootstrap.min.../js" type="text/javascript"></script>
-  <script src="../js/plugins/perfect-scrollbar.min.../js"></script>
-  <!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
-  <script src="../js/material-kit.min.../js?v=3.0.4" type="text/javascript"></script>
+  !--   Core JS Files   -->
+<script src="../js/core/popper.min.js" type="text/javascript"></script>
+<script src="../js/core/bootstrap.min.js" type="text/javascript"></script>
+<script src="../js/plugins/perfect-scrollbar.min.js"></script>
+
+<!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
+<script src="../js/plugins/countup.min.js"></script>
+
+
+<script src="../js/plugins/choices.min.js"></script>
+
+<script src="../js/plugins/prism.min.js"></script>
+<script src="../js/plugins/highlight.min.js"></script>
+
+
+
+<!--  Plugin for Parallax, full documentation here: https://github.com/dixonandmoe/rellax -->
+<script src="../js/plugins/rellax.min.js"></script>
+<!--  Plugin for TiltJS, full documentation here: https://gijsroge.github.io/tilt.js/ -->
+<script src="../js/plugins/tilt.min.js"></script>
+<!--  Plugin for Selectpicker - ChoicesJS, full documentation here: https://github.com/jshjohnson/Choices -->
+<script src="../js/plugins/choices.min.js"></script>
+
+
+
+
+
+<!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
+<script src="../js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+
 </body>
 
 </html>

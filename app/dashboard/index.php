@@ -21,7 +21,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../images/apple-touch-icon.png">
 <link rel="icon" type="image/png" href="../images/logo.png">
 
-<title> utumishi | LOGIN </title>
+<title> utumishi | Dashboard </title>
 
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
 <link href="../css/nucleo-icons.css" rel="stylesheet" />

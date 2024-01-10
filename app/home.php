@@ -1,3 +1,12 @@
+<?php
+session_start();
+$connect = mysqli_connect("localhost", "root", "", "utumishi");
+if(!isset($_SESSION['sess_user'])){
+  header("Location:login.php");
+}
+else
+{
+?>
 <!--
 =========================================================
 * Argon Dashboard 2 - v2.0.4
@@ -28,105 +37,90 @@
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
 <link href="css/nucleo-icons.css" rel="stylesheet" />
 <link href="css/nucleo-svg.css" rel="stylesheet" />
-<script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 <link id="pagestyle" href="css/material-kit.min.css?v=3.0.4" rel="stylesheet" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body class="g-sidenav-show bg-dark">
-  <div class="min-height-300 bg-dark position-absolute w-100"  
-  style="background-image: url('images/wallpaper.jpg'); background-repeat: no-repeat; background-size: cover; background-blend-mode: lighten;">
-    <div class="sidenav-header" ></div>
+<div class="min-height-300 bg-dark position-absolute w-100" style="background-image: url('images/wallpaper.jpg'); background-repeat: no-repeat; background-size: cover; background-blend-mode: lighten;">
+<div class="sidenav-header" ></div>
 
   
-  <aside class="sidenav bg-secondary navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 " id="sidenav-main" 
-  style="background-image: url('images/bg9.jpg'); background-repeat: no-repeat; background-size: cover; background-blend-mode: lighten;">
-    <div class="sidenav-header" >
-      <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
-      <a class="navbar-brand m-0" href="" target="_blank">
-        <images src="images/logo.png" class="navbar-brand-images h-100" alt="main_logo">
-        <span class="ms-1 font-weight-bold">Utumishi</span>
-        <br>
-        <br>
-        <h6 class="ms-1 font-weight-bold">Logged In As : </h6>
+<aside class="sidenav bg-secondary navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4" id="sidenav-main">
 
-        <br>
-        <br>
-        <h6 class="ms-1 font-weight-bold">Online</h6>
 
-        <br>
-        <br>
+<div class="sidenav-header" >
+ <i class="fas fa-times p-3 cursor-pointer text-secondary position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+<a class="navbar-brand m-0" href="" target="_blank">
+<img src="images/logo.png" class="navbar-brand-images h-100" alt="main_logo">
+<span class="h5 text-white">utumishi</span>
+</a>
+</div>
 
-        <a href="logout.php" class="ms-1 font-weight-bold">Sign Out</h6>
+<hr class="horizontal dark mt-0">
+<div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+  <ul class="navbar-nav">
 
-        <br>
-        <br>
-      </a>
+<li class="nav-item">
+<a class="nav-link active" href="home.php">
+ <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
+  <i class="material-symbols-outlined ms-1" style="font-size: 24px;">home</i>
+</div>
+  <span class="ms-1 h5 text-white">Dashboard</span>
+</a>
+</li>
+        <li class="nav-item">
+          <a class="nav-link " href="newcases.php">
+            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">  
+            <i class="ni ni-calendar-grid-58 text-white text-lg"></i>
+            </div>
+            <span class="h5 text-white">Cases</span>
+          </a>
+        </li>
+
+        <hr class="horizontal dark mt-0">
+
+        <li class="nav-item">
+          <a class="nav-link " href="newcases.php">
+            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">  
+            <i class="ni ni-calendar-grid-58 text-white text-lg"></i>
+            </div>
+            <span class="h5 text-white">Logged In As </span>
+          </a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link " href="newcases.php">
+            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">  
+            <i class="ni ni-calendar-grid-58 text-white text-lg"></i>
+            </div>
+            <span class="h5 text-white">Online</span>
+          </a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link " href="newcases.php">
+            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">  
+            <i class="ni ni-calendar-grid-58 text-white text-lg"></i>
+            </div>
+            <span class="h5 text-white">Sign Out</span>
+          </a>
+        </li>
+
+
+
+     </ul>
     </div>
 
-    <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
 
-    <hr class="horizontal dark mt-0">
-    <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="pages/dashboard.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Dashboard</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="cases.php">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-            
-            <i class="fa-solid fa-handcuffs"></i>  
-            <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Cases</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="pages/billing.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-            <i class="fa-solid fa-car"></i>  
-            <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Lost Cars</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="pages/virtual-reality.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-            <i class="fa-solid fa-building-shield"></i>  
-            <i class="ni ni-app text-info text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Evidence Collection</span>
-          </a>
-        </li>
-
-
-        <li class="nav-item">
-          <a class="nav-link " href="pages/virtual-reality.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-            <i class="fa-solid fa-building-shield"></i>  
-            <i class="ni ni-app text-info text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Feedback</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+       
 
   </aside>
+
+  
   <main class="main-content position-relative border-radius-lg ">
     <!-- Navbar -->
     <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur" data-scroll="false">
@@ -143,24 +137,7 @@
 
             </div>
           </div>
-          <ul class="navbar-nav  justify-content-end">
-            <li class="nav-item d-flex align-items-center">
-              <a href="logout.php" class="nav-link text-white font-weight-bold px-0">
-                <i class="fa fa-user me-sm-1"></i>
-                <span class="d-sm-inline d-none">Sign Out</span>
-              </a>
-            </li>
-            <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
-              <a href="javascript:;" class="nav-link text-white p-0" id="iconNavbarSidenav">
-                <div class="sidenav-toggler-inner">
-                  <i class="sidenav-toggler-line bg-white"></i>
-                  <i class="sidenav-toggler-line bg-white"></i>
-                  <i class="sidenav-toggler-line bg-white"></i>
-                </div>
-              </a>
-            </li>
 
-          </ul>
         </div>
       </div>
     </nav>
@@ -488,3 +465,6 @@
 </body>
 
 </html>
+<?php
+}
+?>
