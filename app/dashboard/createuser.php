@@ -54,7 +54,7 @@ else
  <i class="fas fa-times p-3 cursor-pointer text-secondary position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
 <a class="navbar-brand m-0" href="" target="_blank">
 <img src="../images/logo.png" class="navbar-brand-images h-100" alt="main_logo">
-<span class="ms-1 h5 text-white">utumishi</span>
+<span class="ms-1 h5 text-white"> utumishi </span>
 </a>
 </div>
 
@@ -63,7 +63,7 @@ else
   <ul class="navbar-nav">
 
 <li class="nav-item">
-<a class="nav-link" href="home">
+<a class="nav-link active" href="home">
  <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
   <i class="material-symbols-outlined ms-1" style="font-size: 24px;">home</i>
 </div>
@@ -73,13 +73,34 @@ else
 
 
 <li class="nav-item">
-<a class="nav-link active" href="newcases">
+<a class="nav-link" href="cases">
  <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
-  <i class="material-symbols-outlined ms-1" style="font-size: 24px;">box_add</i>
+  <i class="material-symbols-outlined ms-1" style="font-size: 24px;">person_alert</i>
 </div>
-  <span class="ms-1 h5 text-white">File New Case</span>
+  <span class="ms-1 h5 text-white">Cases</span>
 </a>
 </li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="feedback">
+ <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
+  <i class="material-symbols-outlined ms-1" style="font-size: 24px;">mail</i>
+</div>
+  <span class="ms-1 h5 text-white">Feedback</span>
+</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="createuser">
+ <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
+  <i class="material-symbols-outlined ms-1" style="font-size: 24px;">person_add</i>
+</div>
+  <span class="ms-1 h5 text-white">Users</span>
+</a>
+</li>
+
 
 <hr class="horizontal dark mt-0">
 
@@ -88,7 +109,6 @@ else
 </div>
 
 </aside>
-
   
   <main class="main-content position-relative border-radius-lg ">
     <!-- Navbar -->
