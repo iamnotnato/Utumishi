@@ -168,7 +168,7 @@ else
                 <div class="col-lg-4 col-md-8 col-12 mx-auto">             
                     <div class="card z-index-0 fadeIn3 fadeInBottom">
                         <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                            <div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
+                            <div class="bg-gradient-dark shadow-dark border-radius-lg py-3 pe-1">
                                 <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Register</h4>
 
                             </div>
@@ -185,7 +185,7 @@ else
                                 </div>
 
                                 <div class="text-center">
-                                    <button type="submit" value="Login" name="submit" class="btn bg-gradient-primary w-100 my-4 mb-2">Register</button>
+                                    <button type="submit" value="Login" name="submit" class="btn bg-gradient-dark w-100 my-4 mb-2">Register</button>
                                 </div>
                                 <p class="mt-4 text-sm text-center"><a href="sign-in.php">
                                     Already have an account?
@@ -243,6 +243,48 @@ if(isset($_POST['submit'])){
 
             <br>
             <br>
+
+
+
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h3 class="mb-0">File New Case</h3>                       
+                </div>
+              
+              </div>
+
+
+
+
+              <div class="row py-5">
+              <div class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mx-auto">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h3 class="mb-0"><?=$_SESSION['sess_user'];?></h3>
+                  <div class="d-block">
+                 
+                  <h4 class="mb-0"> <i class="material-symbols-outlined ms-1 text-success" style="font-size: 24px;">signal_cellular_alt</i> Online</h4> 
+                </div>
+
+                <div class="d-block">
+                 
+                 <a href="logout" class="mb-0 h4"> <i class="material-symbols-outlined ms-1" style="font-size: 24px;">switch_account</i> Sign Out</a> 
+               </div>
+
+                </div>
+
+
+                <br>
+                <br>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h3 class="mb-0">File New Case</h3>                       
+                </div>
+              
+              </div>
+
+
+
+
+              
+            </div>
 
 
 
@@ -250,7 +292,7 @@ if(isset($_POST['submit'])){
                 <div class="col-lg-4 col-md-8 col-12 mx-auto">             
                     <div class="card z-index-0 fadeIn3 fadeInBottom">
                         <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                            <div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
+                            <div class="bg-gradient-dark shadow-dark border-radius-lg py-3 pe-1">
                                 <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Register</h4>
 
                             </div>
@@ -267,7 +309,7 @@ if(isset($_POST['submit'])){
                                 </div>
 
                                 <div class="text-center">
-                                    <button type="submit" value="Login" name="submit" class="btn bg-gradient-primary w-100 my-4 mb-2">Register</button>
+                                    <button type="submit" value="Login" name="submit" class="btn bg-gradient-dark w-100 my-4 mb-2">Register</button>
                                 </div>
                                 <p class="mt-4 text-sm text-center"><a href="sign-in.php">
                                     Already have an account?
@@ -322,7 +364,7 @@ if(isset($_POST['submit'])){
                 </div>
             </div>
 
-            
+
 
           </div>
         </div>
