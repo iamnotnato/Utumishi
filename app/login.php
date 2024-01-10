@@ -110,6 +110,20 @@
     </section>
   </main>
 
+  <div class="col-12">
+          <div class="text-center">
+            <p class="text-dark my-4 text-sm font-weight-normal">
+              All rights reserved. Copyright © <script>
+                document.write(new Date().getFullYear())
+              </script> Utumishi
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
 <script src="js/core/popper.min.js" type="text/javascript"></script>
 <script src="js/core/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/plugins/perfect-scrollbar.min.js"></script>

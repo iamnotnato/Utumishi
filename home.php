@@ -1,3 +1,12 @@
+<?php
+session_start();
+$connect = mysqli_connect("localhost", "root", "", "utumishi");
+if(!isset($_SESSION['sess_user'])){
+  header("Location:login.php");
+}
+else
+{
+?>
 <!--
 =========================================================
 * Material Kit 2 - v3.0.4
@@ -221,14 +230,38 @@
     </div>
   </footer>
 
-  <!--   Core JS Files   -->
-  <script src="app/js/core/popper.min.js" type="text/javascript"></script>
-  <script src="app/js/core/bootstrap.min.js" type="text/javascript"></script>
-  <script src="app/js/plugins/perfect-scrollbar.min.js"></script>
-  <!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
-  <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
-  <script src="app/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+  !--   Core JS Files   -->
+<script src="h5 text-whitejs/core/popper.min.js" type="text/javascript"></script>
+<script src="h5 text-whitejs/core/bootstrap.min.js" type="text/javascript"></script>
+<script src="h5 text-whitejs/plugins/perfect-scrollbar.min.js"></script>
+
+<!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
+<script src="h5 text-whitejs/plugins/countup.min.js"></script>
+
+
+<script src="h5 text-whitejs/plugins/choices.min.js"></script>
+
+<script src="h5 text-whitejs/plugins/prism.min.js"></script>
+<script src="h5 text-whitejs/plugins/highlight.min.js"></script>
+
+
+
+<!--  Plugin for Parallax, full documentation here: https://github.com/dixonandmoe/rellax -->
+<script src="h5 text-whitejs/plugins/rellax.min.js"></script>
+<!--  Plugin for TiltJS, full documentation here: https://gijsroge.github.io/tilt.js/ -->
+<script src="h5 text-whitejs/plugins/tilt.min.js"></script>
+<!--  Plugin for Selectpicker - ChoicesJS, full documentation here: https://github.com/jshjohnson/Choices -->
+<script src="h5 text-whitejs/plugins/choices.min.js"></script>
+
+
+
+
+
+<!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
+<script src="h5 text-whitejs/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
 </body>
 
 </html>
+<?php
+}
+?>
