@@ -91,16 +91,6 @@ else
 </a>
 </li>
 
-<li class="nav-item">
-<a class="nav-link active" href="home">
- <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
-  <i class="material-symbols-outlined ms-1" style="font-size: 24px;">home</i>
-</div>
-  <span class="ms-1 h5 text-white">Sign Out</span>
-</a>
-</li>
-
-
 <hr class="horizontal dark mt-0">
 
 

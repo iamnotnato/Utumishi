@@ -73,7 +73,7 @@ else
 
 
 <li class="nav-item">
-<a class="nav-link active" href="home">
+<a class="nav-link active" href="cases">
  <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
   <i class="material-symbols-outlined ms-1" style="font-size: 24px;">home</i>
 </div>
@@ -83,7 +83,7 @@ else
 
 
 <li class="nav-item">
-<a class="nav-link active" href="home">
+<a class="nav-link active" href="feedback">
  <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
   <i class="material-symbols-outlined ms-1" style="font-size: 24px;">home</i>
 </div>
@@ -91,12 +91,13 @@ else
 </a>
 </li>
 
+
 <li class="nav-item">
-<a class="nav-link active" href="home">
+<a class="nav-link active" href="createuser">
  <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
   <i class="material-symbols-outlined ms-1" style="font-size: 24px;">home</i>
 </div>
-  <span class="ms-1 h5 text-white">Sign Out</span>
+  <span class="ms-1 h5 text-white">Users</span>
 </a>
 </li>
 
@@ -212,7 +213,7 @@ else
                         <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["email"]; ?></td>
                         <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["sentsms"]; ?> </td>
                         <td><input type="button" class="btn btn-danger" 
-                        onclick="deleteme(<?php echo $row['id']; ?>)" name="Delete" value="Delete"></td>
+                        onclick="deletefeedback(<?php echo $row['id']; ?>)" name="Delete" value="Delete"></td>
                       </tr>
                     
                       <?php
@@ -224,7 +225,7 @@ else
                 </table>
 
                 <script language="javascript">
-  function deleteme(delid)
+  function deletefeedback(delid)
   {
     if(confirm("Do you want to delete this record?")){
       window.location.href='deletefeedback.php?del_id=' +delid+'';
