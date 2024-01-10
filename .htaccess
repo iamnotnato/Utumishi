@@ -1,4 +1,4 @@
-DirectoryIndex index.php
+DirectoryIndex home.php
 
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
