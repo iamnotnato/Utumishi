@@ -178,6 +178,13 @@ else
                </div>
 
                 </div>
+
+
+                <br>
+                <br>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h3 class="mb-0">File New Case</h3>                       
+                </div>
               
               </div>
             </div>
@@ -191,58 +198,85 @@ else
         <br>
 
         <!-- START Blogs w/ 4 cards w/ image & text & link -->
-        <div class="col-lg-12 mb-lg-0 mb-4">
-          <div class="card ">
-            <div class="card-header pb-0 p-3">
-              <div class="d-flex justify-content-between">
-                <h6 class="mb-2">Reported Cases</h6>
-              </div>
-            </div>
-            <div class="table-responsive">
-              <table class="table align-items-center ">
-              <thead>
-                    <tr>
-                    <th class="font-weight-bold mb-0 align-middle text-center">#</th>
-                      <th class="font-weight-bold mb-0 align-middle text-center">Complainant Name</th>
-                      <th class="font-weight-bold mb-0 align-middle text-center ps-2">Telephone Number</th>
-                      <th class="text-center font-weight-bold mb-0 align-middle text-center">ID Number</th>
-                      <th class="text-center font-weight-bold mb-0 align-middle text-center">Crime Details</th>
-                      <th class="text-center font-weight-bold mb-0 align-middle text-center">Time Reported</th>
-                      <th class="text-center font-weight-bold mb-0 align-middle text-center">Filed By:</th>
-                      <th class="text-secondary opacity-7"></th>
-                    </tr>
-                  </thead>
-              <div class="d-flex flex-column justify-content-center">
-                        <?php 
-                    $query = "SELECT * FROM reportedcases ORDER BY id ASC";
-                    $result = mysqli_query($connect, $query);
-                    if(mysqli_num_rows($result) > 0)
-                    {
-                      while ($row = mysqli_fetch_array($result)) {
-                        ?>
-                    
-                      <tr>
-                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["id"]; ?></td>
-                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["namecomplainant"]; ?></td>
-                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["telephonenumber"]; ?></td>
-                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["idnumber"]; ?> </td>
-                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["crimedetails"]; ?> </td>
-                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["timereported"]; ?> </td>
-                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["filedby"]; ?> </td>
-                      </tr>
-                    
-                      <?php
-                    }
-}
-                      ?>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              </table>
-            </div>
-          </div>
-        </div>
+      <div class="card box-shadow-xl overflow-hidden mb-5">
+<div class="row">
+<div class="col-lg-12">
+<form class="p-3" id="contact-form" method="post">
+<div class="card-header px-4 py-sm-5 py-3">
+<h3>File New Case</h3>
+</div>
+<div class="card-body pt-1">
+
+<div class="row">
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+    <div class="input-group input-group-static mb-4">
+<label>Name of Complainant</label>
+<input type="text" class="form-control" placeholder="Full Name">
+</div>
+    </div>
+    <div class="col-sm">
+    <div class="input-group input-group-static mb-4">
+<label>Phone Number</label>
+<input type="text" class="form-control" placeholder="Full Name">
+</div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+    <div class="input-group input-group-static mb-4">
+<label>ID Number</label>
+<input type="text" class="form-control" placeholder="Full Name">
+</div>
+    </div>
+    <div class="col-sm">
+    <div class="input-group input-group-static mb-4">
+<label>Crime Details</label>
+<input type="text" class="form-control" placeholder="Full Name">
+</div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+    <div class="input-group input-group-static mb-4">
+<label>Time Reported</label>
+<input type="text" class="form-control" placeholder="Full Name">
+</div>
+    </div>
+    <div class="col-sm">
+    <div class="input-group input-group-static mb-4">
+<label>Filed by:</label>
+<input type="text" class="form-control" placeholder="Full Name">
+</div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="col-md-6 text-end ms-auto">
+<button type="submit" class="btn bg-gradient-dark mb-0">File Case</button>
+</div>
+
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
         
     <!-- END Blogs w/ 4 cards w/ image & text & link -->
     <!-- END Blogs w/ 4 cards w/ image & text & link -->

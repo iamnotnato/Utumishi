@@ -178,6 +178,13 @@ else
                </div>
 
                 </div>
+
+
+                <br>
+                <br>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h3 class="mb-0">List Of Reported Cases</h3>                       
+                </div>
               
               </div>
             </div>
@@ -188,7 +195,6 @@ else
     </section>
     <!-- END Testimonials w/ user image & text & info -->
     <!-- START Blogs w/ 4 cards w/ image & text & link -->
-        <br>
 
         <!-- START Blogs w/ 4 cards w/ image & text & link -->
         <div class="col-lg-12 mb-lg-0 mb-4">
