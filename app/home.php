@@ -73,11 +73,11 @@ else
 
 
 <li class="nav-item">
-<a class="nav-link active" href="home">
+<a class="nav-link active" href="newcases">
  <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
-  <i class="material-symbols-outlined ms-1" style="font-size: 24px;">home</i>
+  <i class="material-symbols-outlined ms-1" style="font-size: 24px;">box_add</i>
 </div>
-  <span class="ms-1 h5 text-white">Dashboard</span>
+  <span class="ms-1 h5 text-white">Cases</span>
 </a>
 </li>
 
@@ -87,7 +87,7 @@ else
  <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
   <i class="material-symbols-outlined ms-1" style="font-size: 24px;">home</i>
 </div>
-  <span class="ms-1 h5 text-white">Dashboard</span>
+  <span class="ms-1 h5 text-white">...</span>
 </a>
 </li>
 
@@ -97,7 +97,7 @@ else
  <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
   <i class="material-symbols-outlined ms-1" style="font-size: 24px;">home</i>
 </div>
-  <span class="ms-1 h5 text-white">Dashboard</span>
+  <span class="ms-1 h5 text-white">...</span>
 </a>
 </li>
 
@@ -107,7 +107,7 @@ else
  <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
   <i class="material-symbols-outlined ms-1" style="font-size: 24px;">home</i>
 </div>
-  <span class="ms-1 h5 text-white">Dashboard</span>
+  <span class="ms-1 h5 text-white">...</span>
 </a>
 </li>
 
@@ -182,174 +182,12 @@ else
               </div>
             </div>
 
-            <div class="row py-5">
-              <div class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mx-auto">
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                  <div class="d-block">
-                  
-                  
-                  <button class="btn btn-icon btn-3 btn-primary" type="button">
-	<span class="btn-inner--icon"><i class="material-symbols-outlined" style="font-size: 24px;">group_add</i></span>
-  <span class="btn-inner--text h4 text-white">  File New Case</span>
-</button>
-
-
-
-
-
-                </div>
-
-                  </div>
-              
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
     </section>
     <!-- END Testimonials w/ user image & text & info -->
     <!-- START Blogs w/ 4 cards w/ image & text & link -->
-         <div class="col-lg-12 mb-lg-0 mb-4">
-          <div class="card ">
-            <div class="card-header pb-0 p-3">
-              <div class="d-flex justify-content-between">
-                <h6 class="mb-2">Sales by Country</h6>
-              </div>
-            </div>
-            <div class="table-responsive">
-              <table class="table align-items-center ">
-                <tbody>
-                  <tr>
-                    <td class="w-30">
-                      <div class="d-flex px-2 py-1 align-items-center">
-                        <div>
-                          <images src="../images/icons/flags/US.png" alt="Country flag">
-                        </div>
-                        <div class="ms-4">
-                          <p class="text-xs font-weight-bold mb-0">Country:</p>
-                          <h6 class="text-sm mb-0">United States</h6>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="text-center">
-                        <p class="text-xs font-weight-bold mb-0">Sales:</p>
-                        <h6 class="text-sm mb-0">2500</h6>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="text-center">
-                        <p class="text-xs font-weight-bold mb-0">Value:</p>
-                        <h6 class="text-sm mb-0">$230,900</h6>
-                      </div>
-                    </td>
-                    <td class="align-middle text-sm">
-                      <div class="col text-center">
-                        <p class="text-xs font-weight-bold mb-0">Bounce:</p>
-                        <h6 class="text-sm mb-0">29.9%</h6>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="w-30">
-                      <div class="d-flex px-2 py-1 align-items-center">
-                        <div>
-                          <images src="../images/icons/flags/DE.png" alt="Country flag">
-                        </div>
-                        <div class="ms-4">
-                          <p class="text-xs font-weight-bold mb-0">Country:</p>
-                          <h6 class="text-sm mb-0">Germany</h6>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="text-center">
-                        <p class="text-xs font-weight-bold mb-0">Sales:</p>
-                        <h6 class="text-sm mb-0">3.900</h6>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="text-center">
-                        <p class="text-xs font-weight-bold mb-0">Value:</p>
-                        <h6 class="text-sm mb-0">$440,000</h6>
-                      </div>
-                    </td>
-                    <td class="align-middle text-sm">
-                      <div class="col text-center">
-                        <p class="text-xs font-weight-bold mb-0">Bounce:</p>
-                        <h6 class="text-sm mb-0">40.22%</h6>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="w-30">
-                      <div class="d-flex px-2 py-1 align-items-center">
-                        <div>
-                          <images src="../images/icons/flags/GB.png" alt="Country flag">
-                        </div>
-                        <div class="ms-4">
-                          <p class="text-xs font-weight-bold mb-0">Country:</p>
-                          <h6 class="text-sm mb-0">Great Britain</h6>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="text-center">
-                        <p class="text-xs font-weight-bold mb-0">Sales:</p>
-                        <h6 class="text-sm mb-0">1.400</h6>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="text-center">
-                        <p class="text-xs font-weight-bold mb-0">Value:</p>
-                        <h6 class="text-sm mb-0">$190,700</h6>
-                      </div>
-                    </td>
-                    <td class="align-middle text-sm">
-                      <div class="col text-center">
-                        <p class="text-xs font-weight-bold mb-0">Bounce:</p>
-                        <h6 class="text-sm mb-0">23.44%</h6>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="w-30">
-                      <div class="d-flex px-2 py-1 align-items-center">
-                        <div>
-                          <images src="../images/icons/flags/BR.png" alt="Country flag">
-                        </div>
-                        <div class="ms-4">
-                          <p class="text-xs font-weight-bold mb-0">Country:</p>
-                          <h6 class="text-sm mb-0">Brasil</h6>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="text-center">
-                        <p class="text-xs font-weight-bold mb-0">Sales:</p>
-                        <h6 class="text-sm mb-0">562</h6>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="text-center">
-                        <p class="text-xs font-weight-bold mb-0">Value:</p>
-                        <h6 class="text-sm mb-0">$143,960</h6>
-                      </div>
-                    </td>
-                    <td class="align-middle text-sm">
-                      <div class="col text-center">
-                        <p class="text-xs font-weight-bold mb-0">Bounce:</p>
-                        <h6 class="text-sm mb-0">32.14%</h6>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
         <br>
 
         <!-- START Blogs w/ 4 cards w/ image & text & link -->
@@ -357,14 +195,26 @@ else
           <div class="card ">
             <div class="card-header pb-0 p-3">
               <div class="d-flex justify-content-between">
-                <h6 class="mb-2">Sales by Country</h6>
+                <h6 class="mb-2">Reported Cases</h6>
               </div>
             </div>
             <div class="table-responsive">
               <table class="table align-items-center ">
+              <thead>
+                    <tr>
+                    <th class="font-weight-bold mb-0 align-middle text-center">#</th>
+                      <th class="font-weight-bold mb-0 align-middle text-center">Complainant Name</th>
+                      <th class="font-weight-bold mb-0 align-middle text-center ps-2">Telephone Number</th>
+                      <th class="text-center font-weight-bold mb-0 align-middle text-center">ID Number</th>
+                      <th class="text-center font-weight-bold mb-0 align-middle text-center">Crime Details</th>
+                      <th class="text-center font-weight-bold mb-0 align-middle text-center">Time Reported</th>
+                      <th class="text-center font-weight-bold mb-0 align-middle text-center">Filed By:</th>
+                      <th class="text-secondary opacity-7"></th>
+                    </tr>
+                  </thead>
               <div class="d-flex flex-column justify-content-center">
                         <?php 
-                    $query = "SELECT * FROM feedback ORDER BY id ASC";
+                    $query = "SELECT * FROM reportedcases ORDER BY id ASC";
                     $result = mysqli_query($connect, $query);
                     if(mysqli_num_rows($result) > 0)
                     {
@@ -373,10 +223,12 @@ else
                     
                       <tr>
                         <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["id"]; ?></td>
-                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["fullname"]; ?></td>
-                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["email"]; ?></td>
-                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["sentsms"]; ?> </td>
-
+                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["namecomplainant"]; ?></td>
+                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["telephonenumber"]; ?></td>
+                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["idnumber"]; ?> </td>
+                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["crimedetails"]; ?> </td>
+                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["timereported"]; ?> </td>
+                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["filedby"]; ?> </td>
                       </tr>
                     
                       <?php
