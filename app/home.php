@@ -72,6 +72,46 @@ else
 </li>
 
 
+<li class="nav-item">
+<a class="nav-link active" href="home">
+ <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
+  <i class="material-symbols-outlined ms-1" style="font-size: 24px;">home</i>
+</div>
+  <span class="ms-1 h5 text-white">Dashboard</span>
+</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link active" href="home">
+ <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
+  <i class="material-symbols-outlined ms-1" style="font-size: 24px;">home</i>
+</div>
+  <span class="ms-1 h5 text-white">Dashboard</span>
+</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link active" href="home">
+ <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
+  <i class="material-symbols-outlined ms-1" style="font-size: 24px;">home</i>
+</div>
+  <span class="ms-1 h5 text-white">Dashboard</span>
+</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link active" href="home">
+ <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-start justify-content-center">
+  <i class="material-symbols-outlined ms-1" style="font-size: 24px;">home</i>
+</div>
+  <span class="ms-1 h5 text-white">Dashboard</span>
+</a>
+</li>
+
+
 <hr class="horizontal dark mt-0">
 
 
@@ -103,7 +143,13 @@ else
     </nav>
     <!-- End Navbar -->
  
+
+
+
+
       <div class="container-fluid py-4">
+
+      
         <br>
         <br>
       </div>
@@ -146,6 +192,11 @@ else
 	<span class="btn-inner--icon"><i class="material-symbols-outlined" style="font-size: 24px;">group_add</i></span>
   <span class="btn-inner--text h4 text-white">  File New Case</span>
 </button>
+
+
+
+
+
                 </div>
 
                   </div>
@@ -340,13 +391,23 @@ else
             </div>
           </div>
         </div>
+        
     <!-- END Blogs w/ 4 cards w/ image & text & link -->
     <!-- END Blogs w/ 4 cards w/ image & text & link -->
   </div>
 
 
+
+ 
+ 
+           </div>
+  </div>
   
   </main>
+
+
+
+
 
 
   <div class="col-12">
@@ -362,12 +423,35 @@ else
     </div>
   </footer>
 
-  <!--   Core JS Files   -->
-  <script src="js/core/popper.min.js" type="text/javascript"></script>
-  <script src="js/core/bootstrap.min.js" type="text/javascript"></script>
-  <script src="js/plugins/perfect-scrollbar.min.js"></script>
-  <!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
-  <script src="js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+  !--   Core JS Files   -->
+<script src="js/core/popper.min.js" type="text/javascript"></script>
+<script src="js/core/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/plugins/perfect-scrollbar.min.js"></script>
+
+<!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
+<script src="js/plugins/countup.min.js"></script>
+
+
+<script src="js/plugins/choices.min.js"></script>
+
+<script src="js/plugins/prism.min.js"></script>
+<script src="js/plugins/highlight.min.js"></script>
+
+
+
+<!--  Plugin for Parallax, full documentation here: https://github.com/dixonandmoe/rellax -->
+<script src="js/plugins/rellax.min.js"></script>
+<!--  Plugin for TiltJS, full documentation here: https://gijsroge.github.io/tilt.js/ -->
+<script src="js/plugins/tilt.min.js"></script>
+<!--  Plugin for Selectpicker - ChoicesJS, full documentation here: https://github.com/jshjohnson/Choices -->
+<script src="js/plugins/choices.min.js"></script>
+
+
+
+
+
+<!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
+<script src="js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
 </body>
 
 </html>
