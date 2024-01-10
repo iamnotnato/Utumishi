@@ -118,7 +118,7 @@ else
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
             <li class="breadcrumb-item text-sm text-white active" aria-current="page">Dashboard</li>
           </ol>
-          <h6 class="font-weight-bolder text-white mb-0">Feedback</h6>
+          <h6 class="font-weight-bolder text-white mb-0">Admin Users</h6>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -199,7 +199,7 @@ else
                   </thead>
               <div class="d-flex flex-column justify-content-center">
                         <?php 
-                    $query = "SELECT * FROM feedback ORDER BY id ASC";
+                    $query = "SELECT * FROM admins ORDER BY id ASC";
                     $result = mysqli_query($connect, $query);
                     if(mysqli_num_rows($result) > 0)
                     {
@@ -208,9 +208,8 @@ else
                     
                       <tr>
                         <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["id"]; ?></td>
-                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["fullname"]; ?></td>
                         <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["email"]; ?></td>
-                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["sentsms"]; ?> </td>
+                        <td class="font-weight-bold mb-0 align-middle text-center"><?php echo $row["password"]; ?></td>
                         <td><input type="button" class="btn btn-danger" 
                         onclick="deletefeedback(<?php echo $row['id']; ?>)" name="Delete" value="Delete"></td>
                       </tr>
