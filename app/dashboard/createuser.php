@@ -202,8 +202,6 @@ else
                                
                             </form>
 <?php
-date_default_timezone_set('Africa/Nairobi');
-
 if(isset($_POST['submit'])){
   if(!empty($_POST['email']) && !empty($_POST['pass'])){
     $user = $_POST['email'];
@@ -301,7 +299,6 @@ if(isset($_POST['submit'])){
                                 
                             </form>
 <?php
-date_default_timezone_set('Africa/Nairobi');
 
 if(isset($_POST['submitted'])){
   if(!empty($_POST['emails']) && !empty($_POST['passwords'])){

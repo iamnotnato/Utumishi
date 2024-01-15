@@ -51,41 +51,49 @@
 
                 <div class="card-body">
 
-<?php
-  if(isset($_POST["submit"])) {
-      if(!empty($_POST['email']) && !empty($_POST['password'])) {
-          $email = $_POST['email'];
-          $password = $_POST['password'];
-          $conn = new mysqli('localhost', 'root', '') or die(mysqli_error());
-          $db = mysqli_select_db($conn, 'utumishi') or die("DB Error");
-          $query = mysqli_query($conn, "SELECT * FROM admins WHERE email='".$email."' and password='".$password."'");
-          $numrows = mysqli_num_rows($query);
-          if($numrows != 0) {
-              while($row = mysqli_fetch_assoc($query)) {
-                  $dbusername = $row['email'];
-                  $dbpassword = $row['password'];
-              }
-              if($email == $dbusername && $password == $dbpassword) {
-                  session_start();
-                  $_SESSION['sess_user'] = $email;
-                  header("Location: home");
-              }
-          } else {
-              echo "<span class='btn btn-danger text-center'>Incorrect Login Details</span>";
-          }
-      } else {
-          echo "<span class='btn btn-danger text-center'>All fields required</span>";
-      }
-  }
-?>
+                <?php
+if(isset($_POST["submit"])){
+                            if(!empty($_POST['user']) && !empty($_POST['pass'])){
+                              $user = $_POST['user'];
+                              $pass = $_POST['pass'];
+                              $conn = new mysqli('localhost', 'root', '') or die(mysqli_error());
+                                $db = mysqli_select_db($conn, 'utumishi') or die("DB Error");
+                                $query = mysqli_query($conn, "SELECT * FROM userpass WHERE user='".$user."' and pass='".$pass."'");
+                                $numrows = mysqli_num_rows($query);
+                                if($numrows !=0)
+                                {
+                                  while($row = mysqli_fetch_assoc($query))
+                                  {
+                                    $dbusername = $row['user'];
+                                    $dbpassword = $row['pass'];
+                                  }
+                                  if($user == $dbusername && $pass == $dbpassword)
+                                  {
+                                    session_start();
+                                    $_SESSION['sess_user']=$user;
+                                    header("Location: home.php");
+                                  }
+                                }
+                                else
+                                {
+                                      echo "Incorrect Login Details";
+                            
+                                }
+                              }
+                              else
+                              {
+                                echo "All fields required";
+                              }
+                          }
+                          ?>
 
               <form role="form" action="" method="post">
                 <div class="input-group input-group-outline my-3">
-                  <input type="email" name="email" class="form-control form-control-lg  input-group-outline" placeholder="Email" aria-label="Email">
+                  <input type="text" name="user" class="form-control form-control-lg  input-group-outline" placeholder="Username" aria-label="Username">
                 </div>
 
                 <div class="input-group input-group-outline my-3">
-                  <input type="password" name="password" class="form-control form-control-lg  input-group-outline" placeholder="Password" aria-label="Password">
+                  <input type="password" name="pass" class="form-control form-control-lg  input-group-outline" placeholder="Password" aria-label="Password">
                 </div>
 
                 <div class="text-center">
